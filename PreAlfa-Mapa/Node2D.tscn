@@ -157,3 +157,10 @@ rect_scale = Vector2( 0.25, 0.25 )
 action_mode = 0
 texture_normal = ExtResource( 6 )
 script = ExtResource( 5 )
+
+[node name="PopupDialog" type="PopupDialog" parent="Build/CanvasLayer/Boton de Pausa"]
+visible = true
+margin_left = 1108.0
+margin_top = 656.0
+margin_right = 7564.0
+margin_bottom = 4452.0
