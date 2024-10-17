@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Isometric Asset Pack/256x192 Tiles.png" type="Texture" id=1]
 [ext_resource path="res://Isometric Asset Pack/256x512 Trees.png" type="Texture" id=2]
@@ -7,10 +7,10 @@
 [ext_resource path="res://Tiles.tres" type="TileSet" id=5]
 [ext_resource path="res://Block.tres" type="TileSet" id=6]
 [ext_resource path="res://img/Imagen Boton Configuracion.png" type="Texture" id=7]
-[ext_resource path="res://Fuentes/dogica.ttf" type="DynamicFontData" id=8]
 [ext_resource path="res://Transparente.tres" type="Theme" id=9]
 [ext_resource path="res://img/FondoMenu.png" type="Texture" id=10]
 [ext_resource path="res://Boton de Pausa.gd" type="Script" id=11]
+[ext_resource path="res://img/title-lastbastion.png" type="Texture" id=12]
 
 [sub_resource type="TileSet" id=2]
 0/name = "256x192 Tiles.png 0"
@@ -90,10 +90,6 @@
 0/shapes = [  ]
 0/z_index = 0
 
-[sub_resource type="DynamicFont" id=6]
-size = 45
-font_data = ExtResource( 8 )
-
 [node name="Node2D" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -158,10 +154,10 @@ tile_data = PoolIntArray( -4128839, 38, 0, -4128838, 38, 0, -4063303, 38, 0, -40
 [node name="CanvasLayer" type="CanvasLayer" parent="Build"]
 
 [node name="Boton de Pausa" type="TextureButton" parent="Build/CanvasLayer"]
-margin_left = -2238.0
-margin_top = 1266.0
-margin_right = -1726.0
-margin_bottom = 1778.0
+margin_left = -10522.0
+margin_top = 10062.0
+margin_right = -10010.0
+margin_bottom = 10574.0
 rect_scale = Vector2( 0.25, 0.25 )
 action_mode = 0
 texture_normal = ExtResource( 7 )
@@ -184,11 +180,10 @@ margin_bottom = 1028.0
 rect_scale = Vector2( 0.837, 0.837 )
 texture = ExtResource( 10 )
 
-[node name="Label" type="Label" parent="Build/CanvasLayer/Boton de Pausa/PopupDialog/TextureRect"]
-margin_left = 230.0
-margin_top = 503.0
-margin_right = 806.0
-margin_bottom = 538.0
-custom_fonts/font = SubResource( 6 )
-text = "The Last Bastion"
-align = 1
+[node name="Nombre Logo" type="TextureRect" parent="Build/CanvasLayer/Boton de Pausa/PopupDialog/TextureRect"]
+margin_left = 133.184
+margin_top = 372.059
+margin_right = 1103.18
+margin_bottom = 559.059
+rect_scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 12 )

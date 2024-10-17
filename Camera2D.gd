@@ -1,7 +1,8 @@
 extends Camera2D
 
-# Velocidad del movimiento del viewport
-var speed = 200
+# Velocidades de movimiento del viewport
+var speed_normal = 1000  # Velocidad para zoom <= 50% (más alejado)
+var speed_zoomed_out = 5000  # Velocidad por defecto para zoom > 50% (más cerca)
 
 func _process(delta):
 	# Vector para el movimiento
@@ -20,8 +21,14 @@ func _process(delta):
 	# Normalizar para evitar movimientos diagonales más rápidos
 	movement = movement.normalized()
 
+	# Ajustar la velocidad según el nivel de zoom
+	var speed = speed_normal  # Valor por defecto
+	if zoom_level > 0.5:  # Zoom mayor al 50%
+		speed = speed_zoomed_out
+
 	# Mover la cámara
 	position += movement * speed * delta
+
 var zoom_level = 1.0
 var zoom_speed = 0.1
 
@@ -34,7 +41,7 @@ func _input(event):
 			zoom_level += zoom_speed
 	
 	# Limitar el zoom entre un mínimo y un máximo
-	zoom_level = clamp(zoom_level, 0.5, 2.0)
+	zoom_level = clamp(zoom_level, 0.5, 10.0)  # Aumentar el valor máximo a 10.0
 
 	# Aplicar el zoom
 	zoom = Vector2(zoom_level, zoom_level)

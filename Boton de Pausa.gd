@@ -41,6 +41,9 @@ func _on_Boton_de_Pausa_pressed():
 
 	# Asignar el StyleBoxTexture al estado "normal"
 	boton_cerrar.add_stylebox_override("normal", style_box_texture)
+	
+	boton_cerrar.add_color_override("font_color", Color(0, 0, 0))  # Color normal (negro)
+
 
 	# Crear un nuevo StyleBoxTexture para el estado "pressed"
 	var pressed_style = StyleBoxTexture.new()
