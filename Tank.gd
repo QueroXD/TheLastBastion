@@ -2,7 +2,7 @@ extends Area2D
 export var speed = 200 # Velocidad del NPC.
 var screen_size # Tamaño de la ventana del juego.
 
-var waypoints = [Vector2(150, 150), Vector2(300, 300)] # Puntos de ruta predefinidos.
+var waypoints = [Vector2(150, 100), Vector2(300, 300)] # Puntos de ruta predefinidos.
 var current_waypoint = 0
 
 func _ready():
