@@ -52,3 +52,5 @@ func _input(event):
 	# Aplicar el zoom
 	zoom = Vector2(zoom_level, zoom_level)
 
+
+
