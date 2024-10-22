@@ -95,12 +95,13 @@
 0/z_index = 0
 
 [sub_resource type="DynamicFont" id=6]
-size = 25
+size = 72
 font_data = ExtResource( 8 )
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
+visible = false
 current = true
 script = ExtResource( 4 )
 
@@ -177,7 +178,7 @@ margin_left = 732.0
 margin_top = 876.0
 margin_right = 1597.0
 margin_bottom = 1741.0
-rect_scale = Vector2( 0.837, 0.837 )
+rect_scale = Vector2( 1.25241, 1.25 )
 theme = ExtResource( 9 )
 
 [node name="TextureRect" type="TextureRect" parent="Build/CanvasLayer/Boton de Pausa/PopupDialog"]
@@ -232,11 +233,10 @@ scale = Vector2( 1.6664, 1.6664 )
 texture = ExtResource( 12 )
 
 [node name="start" type="Label" parent="CanvasLayer"]
-margin_left = 758.0
+margin_left = 801.0
 margin_top = 584.0
-margin_right = 883.0
-margin_bottom = 603.0
-rect_scale = Vector2( 3.26244, 3.26244 )
+margin_right = 1161.0
+margin_bottom = 638.0
 custom_fonts/font = SubResource( 6 )
 text = "START"
 align = 1

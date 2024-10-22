@@ -143,6 +143,6 @@ func _on_BotonCerrar_pressed():
 	slide_out_popup()
 
 # Función que oculta el PopupDialog una vez que ha terminado la animación
-func _on_TweenCompleted(tween_name: String, node: Node):
+func _on_TweenCompleted(_tween_name: String, _node: Node):
 	# Asegúrate de que el PopupDialog esté oculto
 	popup.hide()

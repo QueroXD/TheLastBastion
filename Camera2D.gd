@@ -7,7 +7,7 @@ var zoom_level = 10.0  # Nivel de zoom inicial
 
 func _ready():
 	# Establecer un nivel de zoom inicial
-	zoom_level = 10.0  # Cambia este valor para ajustar el zoom inicial
+	zoom_level = 5.0  # Cambia este valor para ajustar el zoom inicial
 	zoom = Vector2(zoom_level, zoom_level)
 
 func _process(delta):
@@ -39,18 +39,11 @@ var zoom_speed = 0.1
 var is_fullscreen = false
 
 func _input(event):
-	# Zoom In (usando la rueda del ratón hacia arriba)
 	if event is InputEventMouseButton:
 		if event.button_index == BUTTON_WHEEL_UP:
-			zoom_level -= zoom_speed
+			zoom_level = max(0.5, zoom_level - zoom_speed)
 		elif event.button_index == BUTTON_WHEEL_DOWN:
-			zoom_level += zoom_speed
-	
-	# Limitar el zoom entre un mínimo y un máximo
-	zoom_level = clamp(zoom_level, 0.5, 10.0)  # Aumentar el valor máximo a 10.0
+			zoom_level = min(10.0, zoom_level + zoom_speed)
 
-	# Aplicar el zoom
-	zoom = Vector2(zoom_level, zoom_level)
-
-
-
+		# Aplicar el zoom directamente en lugar de interpolar con Tween
+		zoom = Vector2(zoom_level, zoom_level)
