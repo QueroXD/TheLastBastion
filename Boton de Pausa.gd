@@ -41,6 +41,9 @@ func _on_Boton_de_Pausa_pressed():
 
 	# Asignar el StyleBoxTexture al estado "normal"
 	boton_cerrar.add_stylebox_override("normal", style_box_texture)
+	
+	boton_cerrar.add_color_override("font_color", Color(0, 0, 0))  # Color normal (negro)
+
 
 	# Crear un nuevo StyleBoxTexture para el estado "pressed"
 	var pressed_style = StyleBoxTexture.new()
@@ -140,6 +143,6 @@ func _on_BotonCerrar_pressed():
 	slide_out_popup()
 
 # Función que oculta el PopupDialog una vez que ha terminado la animación
-func _on_TweenCompleted(tween_name: String, node: Node):
+func _on_TweenCompleted(_tween_name: String, _node: Node):
 	# Asegúrate de que el PopupDialog esté oculto
 	popup.hide()
