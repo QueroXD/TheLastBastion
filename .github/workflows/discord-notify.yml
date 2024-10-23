@@ -12,19 +12,19 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # Esto clona todo el historial de git, necesario para git log
+          fetch-depth: 0  # Clona todo el historial de git
 
       - name: Get last commit info
         id: vars
         run: |
-          COMMIT_MESSAGE=$(git log -1 --pretty=%B)
+          COMMIT_MESSAGE=$(git log -1 --pretty=%B | tr -d '"' | tr '\n' ' ')
           COMMIT_AUTHOR=$(git log -1 --pretty=%an)
           COMMIT_URL=${{ github.event.head_commit.url }}
           DIFF_URL=${{ github.event.repository.html_url }}/compare/${{ github.event.before }}...${{ github.sha }}
-          echo "COMMIT_MESSAGE=${COMMIT_MESSAGE}" >> $GITHUB_ENV
-          echo "COMMIT_AUTHOR=${COMMIT_AUTHOR}" >> $GITHUB_ENV
-          echo "COMMIT_URL=${COMMIT_URL}" >> $GITHUB_ENV
-          echo "DIFF_URL=${DIFF_URL}" >> $GITHUB_ENV
+          echo "COMMIT_MESSAGE=$COMMIT_MESSAGE" >> $GITHUB_ENV
+          echo "COMMIT_AUTHOR=$COMMIT_AUTHOR" >> $GITHUB_ENV
+          echo "COMMIT_URL=$COMMIT_URL" >> $GITHUB_ENV
+          echo "DIFF_URL=$DIFF_URL" >> $GITHUB_ENV
 
       - name: Send message to Discord
         run: |
