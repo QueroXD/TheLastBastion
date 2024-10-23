@@ -9,6 +9,11 @@ jobs:
   discordNotification:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Esto clona todo el historial de git, necesario para git log
+
       - name: Get last commit info
         id: vars
         run: |
