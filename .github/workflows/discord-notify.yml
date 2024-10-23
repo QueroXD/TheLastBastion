@@ -9,11 +9,25 @@ jobs:
   discordNotification:
     runs-on: ubuntu-latest
     steps:
+      - name: Get last commit info
+        id: vars
+        run: |
+          COMMIT_MESSAGE=$(git log -1 --pretty=%B)
+          COMMIT_AUTHOR=$(git log -1 --pretty=%an)
+          COMMIT_URL=${{ github.event.head_commit.url }}
+          DIFF_URL=${{ github.event.repository.html_url }}/compare/${{ github.event.before }}...${{ github.sha }}
+          echo "COMMIT_MESSAGE=${COMMIT_MESSAGE}" >> $GITHUB_ENV
+          echo "COMMIT_AUTHOR=${COMMIT_AUTHOR}" >> $GITHUB_ENV
+          echo "COMMIT_URL=${COMMIT_URL}" >> $GITHUB_ENV
+          echo "DIFF_URL=${DIFF_URL}" >> $GITHUB_ENV
+
       - name: Send message to Discord
         run: |
           curl -H "Content-Type: application/json" \
           -X POST \
-          -d '{"content": "¡La rama `main` ha sido actualizada!"}' \
+          -d '{
+            "content": "Nuevo commit en la rama `main`: \n**Autor:** ${{ env.COMMIT_AUTHOR }} \n**Mensaje:** ${{ env.COMMIT_MESSAGE }} \n**Ver commit:** ${{ env.COMMIT_URL }} \n**Ver diff:** ${{ env.DIFF_URL }}"
+          }' \
           ${DISCORD_WEBHOOK}
     env:
       DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
