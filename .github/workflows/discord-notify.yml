@@ -1,0 +1,19 @@
+name: Notify Discord on push to main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  discordNotification:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send message to Discord
+        run: |
+          curl -H "Content-Type: application/json" \
+          -X POST \
+          -d '{"content": "¡La rama `main` ha sido actualizada!"}' \
+          ${DISCORD_WEBHOOK}
+    env:
+      DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
