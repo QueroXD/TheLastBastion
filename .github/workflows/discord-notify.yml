@@ -29,7 +29,7 @@ jobs:
           curl -H "Content-Type: application/json" \
           -X POST \
           -d '{
-            "content": "¡Nuevo commit en la rama `${{ env.BRANCH_NAME }}`! \n**Autor:** ${{ env.COMMIT_AUTHOR }} \n**Commit:** ${{ env.COMMIT_MESSAGE }}\n**Detalles:** ${{ env.COMMIT_MESSAGE }}"
+            "content": "¡Nuevo commit en la rama `${{ env.BRANCH_NAME }}`! \n**Autor:** ${{ env.COMMIT_AUTHOR }} \n**Commit:** ${{ env.COMMIT_MESSAGE }}\n"
           }' \
           ${DISCORD_WEBHOOK}
     env:
