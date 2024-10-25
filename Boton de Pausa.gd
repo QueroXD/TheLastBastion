@@ -117,12 +117,12 @@ func slide_out_popup():
 	var tween = Tween.new()
 	add_child(tween)
 
-	# Anima el deslizamiento hacia arriba fuera de la pantalla
+	# Anima el deslizamiento hacia arriba mucho más lejos de la pantalla
 	tween.interpolate_property(
 		popup,
 		"rect_position",
 		Vector2((get_viewport().size.x - popup.rect_size.x) / 2 + 60, (get_viewport().size.y - popup.rect_size.y) / 2),  # Posición inicial (en el centro)
-		Vector2((get_viewport().size.x - popup.rect_size.x) / 2 + 60, -popup.rect_size.y),  # Posición final (fuera de la pantalla)
+		Vector2((get_viewport().size.x - popup.rect_size.x) / 2 + 60, -popup.rect_size.y - 200),  # Sube mucho más alto fuera de pantalla
 		0.5,  # Duración de la animación en segundos
 		Tween.TRANS_QUINT,  # Tipo de interpolación
 		Tween.EASE_IN_OUT  # Easing
