@@ -14,6 +14,7 @@ var game_started = false  # Variable para rastrear si el juego ha comenzado
 
 func _ready():
 	set_process_input(true)  # Permitir la detección de input
+	
 
 func _input(event):
 	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
