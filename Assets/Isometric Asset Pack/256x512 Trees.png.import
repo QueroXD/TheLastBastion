@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://drlqwm3ilwdsr"
-path="res://.godot/imported/256x512 Trees.png-68c32d159590c15a0a96dbd93f2c0abd.ctex"
+path="res://.godot/imported/256x512 Trees.png-3cf09c909918757c5b345ac15b968e57.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Isometric Asset Pack/256x512 Trees.png"
-dest_files=["res://.godot/imported/256x512 Trees.png-68c32d159590c15a0a96dbd93f2c0abd.ctex"]
+source_file="res://Assets/Isometric Asset Pack/256x512 Trees.png"
+dest_files=["res://.godot/imported/256x512 Trees.png-3cf09c909918757c5b345ac15b968e57.ctex"]
 
 [params]
 

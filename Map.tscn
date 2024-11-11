@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=4 uid="uid://c8wvbncnpmumb"]
 
-[ext_resource type="Texture2D" uid="uid://dg7i50fx1whwj" path="res://Isometric Asset Pack/256x192 Tiles.png" id="1_jhj3t"]
+[ext_resource type="Texture2D" uid="uid://dg7i50fx1whwj" path="res://Assets/Isometric Asset Pack/256x192 Tiles.png" id="1_jhj3t"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6fnpl"]
 texture = ExtResource("1_jhj3t")

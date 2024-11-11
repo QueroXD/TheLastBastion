@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfnyp67q7anym"
-path="res://.godot/imported/256x256 UI Elements.png-b76e6f3eb9c79719601a8ebfecd1e988.ctex"
+path="res://.godot/imported/256x256 UI Elements.png-13fa500166ecf95d696cf36f9bcdbfec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Isometric Asset Pack/256x256 UI Elements.png"
-dest_files=["res://.godot/imported/256x256 UI Elements.png-b76e6f3eb9c79719601a8ebfecd1e988.ctex"]
+source_file="res://Assets/Isometric Asset Pack/256x256 UI Elements.png"
+dest_files=["res://.godot/imported/256x256 UI Elements.png-13fa500166ecf95d696cf36f9bcdbfec.ctex"]
 
 [params]
 

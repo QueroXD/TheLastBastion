@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://rfh1bt8r3bol"
-path="res://.godot/imported/256x128 Tile Overlays.png-33f5f0196688495ab2154d9a7f168081.ctex"
+path="res://.godot/imported/256x128 Tile Overlays.png-8adcb7f5d6212556f6ecbc5660023a69.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Isometric Asset Pack/256x128 Tile Overlays.png"
-dest_files=["res://.godot/imported/256x128 Tile Overlays.png-33f5f0196688495ab2154d9a7f168081.ctex"]
+source_file="res://Assets/Isometric Asset Pack/256x128 Tile Overlays.png"
+dest_files=["res://.godot/imported/256x128 Tile Overlays.png-8adcb7f5d6212556f6ecbc5660023a69.ctex"]
 
 [params]
 

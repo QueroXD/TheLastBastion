@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c20qyucuv4q4l"
-path="res://.godot/imported/256x152 Floorings.png-2cfa6c06f1bb0d045fcf06c1e9f3e52b.ctex"
+path="res://.godot/imported/256x152 Floorings.png-4f2b1ae07ace5c119e5e7c5d4a50a0a2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Isometric Asset Pack/256x152 Floorings.png"
-dest_files=["res://.godot/imported/256x152 Floorings.png-2cfa6c06f1bb0d045fcf06c1e9f3e52b.ctex"]
+source_file="res://Assets/Isometric Asset Pack/256x152 Floorings.png"
+dest_files=["res://.godot/imported/256x152 Floorings.png-4f2b1ae07ace5c119e5e7c5d4a50a0a2.ctex"]
 
 [params]
 
