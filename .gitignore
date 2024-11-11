@@ -1,3 +1,6 @@
 
 *.md5
 *.stex
+*.ctex
+*.cfg
+*.import
