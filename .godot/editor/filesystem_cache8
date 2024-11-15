@@ -1,16 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1731346478
+::res://::1731691302
 icon.svg::CompressedTexture2D::3368103934904702007::1731084707::1731084716::1::::<><>::
-map.tscn::PackedScene::7135767047176947929::1731090765::0::1::::<><>::uid://dg7i50fx1whwj::::res://Isometric Asset Pack/256x192 Tiles.png
-::res://Isometric Asset Pack/::1731085028
-64x128 ExclamationMark.png::CompressedTexture2D::1120851545485620540::1729184482::1731085026::1::::<><>::
-256x128 Tile Overlays.png::CompressedTexture2D::1204003763605564859::1730137702::1731085027::1::::<><>::
-256x152 Floorings.png::CompressedTexture2D::6720564974897094365::1729184482::1731085027::1::::<><>::
-256x192 SlopesAndStairs.png::CompressedTexture2D::266210753860932872::1729184482::1731085027::1::::<><>::
-256x192 Tiles.png::CompressedTexture2D::7646995832685097601::1729184482::1731085028::1::::<><>::
-256x256 Cubes.png::CompressedTexture2D::7450833624592208054::1729184482::1731085028::1::::<><>::
-256x256 Objects.png::CompressedTexture2D::448288220118496113::1729184482::1731085027::1::::<><>::
-256x256 SlopesAndStairs.png::CompressedTexture2D::3165705545792919732::1729184482::1731085027::1::::<><>::
-256x256 UI Elements.png::CompressedTexture2D::5152108169541450864::1729184482::1731085027::1::::<><>::
-256x512 Trees.png::CompressedTexture2D::8376191981484459617::1729184482::1731085027::1::::<><>::
-License.txt::TextFile::-1::1729184482::0::1::::<><>::
+Map.tscn::PackedScene::6882553547547841905::1731691302::0::1::::<><>::uid://c4nynkgxytqb4::::res://Assets/revolution/revolution_tiles.png
+::res://Assets/::1731691057
+::res://Assets/revolution/::1731691988
+revolution_tiles.png::CompressedTexture2D::6836635702419257207::1542085755::1731691060::1::::<><>::
+Test.png::CompressedTexture2D::5697540452812332596::1731691988::1731692111::1::::<><>::
+::res://Map/::1731690891
+Map.tscn::PackedScene::7135767047176947929::1731690864::0::1::::<><>::
