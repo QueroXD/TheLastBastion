@@ -1,3 +1,8 @@
+Button
+TextureRect
+ColorRect
+PopupMenu
+Panel
 TileMapLayer
 TileMap
 Node2D

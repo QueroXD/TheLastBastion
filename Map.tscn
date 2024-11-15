@@ -1,6 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://c5b7we8ves10h"]
 
+<<<<<<< HEAD
 [ext_resource type="Texture2D" uid="uid://c4nynkgxytqb4" path="res://Assets/revolution/revolution_tiles.png" id="1_7k3oe"]
+=======
+[ext_resource type="Texture2D" uid="uid://dg7i50fx1whwj" path="res://Assets/Isometric Asset Pack/256x192 Tiles.png" id="1_jhj3t"]
+>>>>>>> 539843d1205e92b3f95b121b0e25ba63ae0ebd56
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a3xay"]
 texture = ExtResource("1_7k3oe")

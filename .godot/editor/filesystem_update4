@@ -1,1 +1,7 @@
 res://Map.tscn
+<<<<<<< HEAD
+=======
+res://ui.tscn
+res://Build.tscn
+res://ui.gd
+>>>>>>> 539843d1205e92b3f95b121b0e25ba63ae0ebd56
