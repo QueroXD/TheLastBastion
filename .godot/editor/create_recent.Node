@@ -1,8 +1,9 @@
-Button
+TileMapLayer
 TextureRect
+ParallaxBackground
+TileMap
+Button
 ColorRect
 PopupMenu
 Panel
-TileMapLayer
-TileMap
 Node2D
