@@ -4,3 +4,6 @@
 *.ctex
 *.cfg
 *.import
+*.cfg
+*.bin
+*.md5
