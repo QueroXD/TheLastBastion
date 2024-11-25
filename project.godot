@@ -11,6 +11,14 @@ config_version=5
 [application]
 
 config/name="The Last Bastion"
-run/main_scene="res://map.tscn"
+run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://logo-lastbastion.png"
+
+[autoload]
+
+Globals="*res://globals.gd"
+
+[display]
+
+window/size/mode=2

@@ -1,6 +1,10 @@
-Button
-TextureRect
-Panel
+Camera2D
 TileMapLayer
+TextureRect
+ParallaxBackground
 TileMap
+Button
+ColorRect
+PopupMenu
+Panel
 Node2D
