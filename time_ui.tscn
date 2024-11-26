@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://dcbw6lpbs3mi6"]
+
+[ext_resource type="Script" path="res://time_ui.gd" id="1_6ew8b"]
+[ext_resource type="FontFile" uid="uid://cjsn3t420r8s7" path="res://Assets/Fonts/Kenney Mini Square.ttf" id="2_ty0iq"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6ro3b"]
+font = ExtResource("2_ty0iq")
+
+[node name="time_ui" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_6ew8b")
+
+[node name="DateLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1053.0
+offset_top = 15.0
+offset_right = 1141.0
+offset_bottom = 35.0
+text = "01-01-2044"
+label_settings = SubResource("LabelSettings_6ro3b")
+
+[node name="NextDayButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1004.0
+offset_top = 8.0
+offset_right = 1041.0
+offset_bottom = 42.0
