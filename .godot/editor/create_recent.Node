@@ -1,5 +1,6 @@
-Camera2D
 TileMapLayer
+Sprite2D
+Camera2D
 TextureRect
 ParallaxBackground
 TileMap

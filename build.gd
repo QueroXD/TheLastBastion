@@ -11,3 +11,7 @@ func _ready():
 	# Utiliza Callable para la conexión en Godot 4
 	$TextureRect/Cerrar.connect("pressed", Callable(self, "_on_ButtonCerrar_pressed"))
 	
+
+
+func _on_button_pressed() -> void:
+		queue_free()
