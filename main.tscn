@@ -1,10 +1,25 @@
-[gd_scene load_steps=3 format=3 uid="uid://b0sycsql15itm"]
+[gd_scene load_steps=5 format=3 uid="uid://gg6hhpxi0d5s"]
 
 [ext_resource type="PackedScene" uid="uid://c5b7we8ves10h" path="res://Map.tscn" id="1_l2aq6"]
+[ext_resource type="Script" path="res://main.gd" id="1_xcw4s"]
 [ext_resource type="PackedScene" uid="uid://beo2f3rpe5yte" path="res://ui.tscn" id="2_0f8nx"]
+[ext_resource type="Script" path="res://camera_2d.gd" id="3_duh21"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_xcw4s")
 
 [node name="Map" parent="." instance=ExtResource("1_l2aq6")]
 
-[node name="UI" parent="." instance=ExtResource("2_0f8nx")]
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, 1)
+anchor_mode = 0
+script = ExtResource("3_duh21")
+
+[node name="UI" parent="Camera2D" instance=ExtResource("2_0f8nx")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_top = -1.0
+offset_bottom = -1.0
+grow_horizontal = 1
+grow_vertical = 1
