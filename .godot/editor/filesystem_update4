@@ -1,5 +1,7 @@
+res://time_ui.tscn
+res://ui.tscn
 res://Map.tscn
 res://main.tscn
-res://camera_2d.gd
-res://ui.gd
-res://main.gd
+res://Build.tscn
+res://time_ui.gd
+res://Assets/barrapanel.tres

@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://beo2f3rpe5yte"]
+[gd_scene load_steps=7 format=4 uid="uid://beo2f3rpe5yte"]
 
 [ext_resource type="Script" path="res://ui.gd" id="1_ixamc"]
-[ext_resource type="Texture2D" uid="uid://k5u08jnqrse7" path="res://img/ui_bar_left.png" id="1_k5jpq"]
-[ext_resource type="Texture2D" uid="uid://dq0o6ep0xtme0" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/gear.png" id="2_5nq0a"]
-[ext_resource type="Texture2D" uid="uid://b0dr0meaxmyyq" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/book.png" id="3_25a44"]
-[ext_resource type="Texture2D" uid="uid://cw2rhga1xkiy3" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/tool_items.png" id="4_hxdlf"]
+[ext_resource type="Texture2D" uid="uid://cdnhk0uxr8qm8" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/gear.png" id="2_5nq0a"]
+[ext_resource type="TileSet" uid="uid://bl7ilct1lp1u1" path="res://Assets/barrapanel.tres" id="2_mqfad"]
+[ext_resource type="Texture2D" uid="uid://c8bnlwmxviokx" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/book.png" id="3_25a44"]
+[ext_resource type="Texture2D" uid="uid://b1ki4dvw6o2f1" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/tool_items.png" id="4_hxdlf"]
+[ext_resource type="PackedScene" uid="uid://y3d6tf6lj2b6" path="res://time_ui.tscn" id="6_yj72a"]
 
 [node name="UI" type="Control"]
 layout_mode = 3
@@ -15,39 +16,49 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ixamc")
 
-[node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 0
-offset_right = 1152.0
-offset_bottom = 648.0
-scale = Vector2(1.34556, 1.34556)
-texture = ExtResource("1_k5jpq")
-expand_mode = 1
+[node name="Barrita" type="TileMapLayer" parent="."]
+position = Vector2(1, 0)
+tile_map_data = PackedByteArray("AAAAAAAAAQAAAAEAAAAAAAEAAQAAAAIAAAAAAAIAAQAAAAMAAAAAAAMAAQAAAAQAAAAAAAQAAQAAAAUAAAABAP//AQABAAAAAAABAAAAAQABAAEAAAABAAEAAQABAAIAAAABAAIAAQABAAMAAAABAAMAAQABAAQAAAABAAQAAQABAAUAAAACAP//AQACAAAAAAACAAAAAQACAAEAAAACAAEAAQACAAIAAAACAAIAAQACAAMAAAACAAMAAQACAAQAAAACAAQAAQACAAUAAAADAP//AQADAAAAAAADAAAAAQADAAEAAAADAAEAAQADAAIAAAADAAIAAQADAAMAAAADAAMAAQADAAQAAAADAAQAAQADAAUAAAAEAP//AQAEAAAAAAAEAAAAAQAEAAEAAAAEAAEAAQAEAAIAAAAEAAIAAQAEAAMAAAAEAAMAAQAEAAQAAAAEAAQAAQAEAAUAAAAFAP//AQAFAAAAAAAFAAAAAQAFAAEAAAAFAAEAAQAFAAIAAAAFAAIAAQAFAAMAAAAFAAMAAQAFAAQAAAAFAAQAAQAFAAUAAAAHAP//AQANAAAAAAAHAAAAAQANAAEAAAAHAAEAAQANAAIAAAAHAAIAAQANAAMAAAAHAAMAAQANAAQAAAAHAAQAAQANAAUAAAAIAP//AQAOAAAAAAAIAAAAAQAOAAEAAAAIAAEAAQAOAAIAAAAIAAIAAQAOAAMAAAAIAAMAAQAOAAQAAAAIAAQAAQAOAAUAAAAJAP//AQAPAAAAAAAJAAAAAQAPAAEAAAAJAAEAAQAPAAIAAAAJAAIAAQAPAAMAAAAJAAMAAQAPAAQAAAAJAAQAAQAPAAUAAAAKAP//AQAQAAAAAAAKAAAAAQAQAAEAAAAKAAEAAQAQAAIAAAAKAAIAAQAQAAMAAAAKAAMAAQAQAAQAAAAKAAQAAQAQAAUAAAALAAAAAQARAAEAAAALAAEAAQARAAIAAAALAAIAAQARAAMAAAALAAMAAQARAAQAAAALAAQAAQARAAUAAAAGAP//AQAMAAAAAAAGAAAAAQAMAAEAAAAGAAEAAQAMAAIAAAAGAAIAAQAMAAMAAAAGAAMAAQAMAAQAAAAGAAQAAQAMAAUAAAA=")
+tile_set = ExtResource("2_mqfad")
 
-[node name="Config" type="Button" parent="TextureRect"]
-layout_mode = 0
-offset_left = 14.0
-offset_top = 10.0
-offset_right = 54.0
-offset_bottom = 50.0
+[node name="Config" type="Button" parent="Barrita"]
+offset_left = 17.0
+offset_top = 8.0
+offset_right = 57.0
+offset_bottom = 48.0
+scale = Vector2(1.28, 1.28)
 icon = ExtResource("2_5nq0a")
 flat = true
+metadata/_edit_use_anchors_ = true
 
-[node name="Book" type="Button" parent="TextureRect"]
-layout_mode = 0
-offset_left = 54.0
-offset_top = 10.0
-offset_right = 94.0
-offset_bottom = 50.0
+[node name="Book" type="Button" parent="Barrita"]
+offset_left = 71.0
+offset_top = 9.0
+offset_right = 111.0
+offset_bottom = 49.0
+scale = Vector2(1.28, 1.28)
 icon = ExtResource("3_25a44")
 flat = true
+metadata/_edit_use_anchors_ = true
 
-[node name="Construction" type="Button" parent="TextureRect"]
-layout_mode = 0
-offset_left = 94.0
-offset_top = 10.0
-offset_right = 134.0
-offset_bottom = 50.0
+[node name="Construction" type="Button" parent="Barrita"]
+offset_left = 124.483
+offset_top = 8.4556
+offset_right = 164.483
+offset_bottom = 48.4556
+scale = Vector2(1.28, 1.28)
 icon = ExtResource("4_hxdlf")
 flat = true
+metadata/_edit_use_anchors_ = true
 
-[connection signal="pressed" from="TextureRect/Construction" to="TextureRect/Construction" method="_on_pressed"]
+[node name="Barrita Tiempo" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAA3AAAAAQAAAAEAAAA3AAEAAQAAAAIAAAA3AAIAAQAAAAMAAAA3AAMAAQAAAAQAAAA3AAQAAQAAAAUAAAA4AP//AQABAAAAAAA4AAAAAQABAAEAAAA4AAEAAQABAAIAAAA4AAIAAQABAAMAAAA4AAMAAQABAAQAAAA4AAQAAQABAAUAAAA5AP//AQACAAAAAAA5AAAAAQACAAEAAAA5AAEAAQACAAIAAAA5AAIAAQACAAMAAAA5AAMAAQACAAQAAAA5AAQAAQACAAUAAAA6AP//AQADAAAAAAA6AAAAAQADAAEAAAA6AAEAAQADAAIAAAA6AAIAAQADAAMAAAA6AAMAAQADAAQAAAA6AAQAAQADAAUAAAA7AP//AQAEAAAAAAA7AAAAAQAEAAEAAAA7AAEAAQAEAAIAAAA7AAIAAQAEAAMAAAA7AAMAAQAEAAQAAAA7AAQAAQAEAAUAAAA8AP//AQAFAAAAAAA8AAAAAQAFAAEAAAA8AAEAAQAFAAIAAAA8AAIAAQAFAAMAAAA8AAMAAQAFAAQAAAA8AAQAAQAFAAUAAAA9AP//AQAGAAAAAAA9AAAAAQAGAAEAAAA9AAEAAQAGAAIAAAA9AAIAAQAGAAMAAAA9AAMAAQAGAAQAAAA9AAQAAQAGAAUAAABEAP//AQAOAAAAAABEAAAAAQAOAAEAAABEAAEAAQAOAAIAAABEAAIAAQAOAAMAAABEAAMAAQAOAAQAAABEAAQAAQAOAAUAAABFAP//AQAPAAAAAABFAAAAAQAPAAEAAABFAAEAAQAPAAIAAABFAAIAAQAPAAMAAABFAAMAAQAPAAQAAABFAAQAAQAPAAUAAABGAP//AQAQAAAAAABGAAAAAQAQAAEAAABGAAEAAQAQAAIAAABGAAIAAQAQAAMAAABGAAMAAQAQAAQAAABGAAQAAQAQAAUAAABHAAAAAQARAAEAAABHAAEAAQARAAIAAABHAAIAAQARAAMAAABHAAMAAQARAAQAAABHAAQAAQARAAUAAAA+AP//AQAIAAAAAAA+AAAAAQAIAAEAAAA+AAEAAQAIAAIAAAA+AAIAAQAIAAMAAAA+AAMAAQAIAAQAAAA+AAQAAQAIAAUAAAA/AP//AQAJAAAAAAA/AAAAAQAJAAEAAAA/AAEAAQAJAAIAAAA/AAIAAQAJAAMAAAA/AAMAAQAJAAQAAAA/AAQAAQAJAAUAAABAAP//AQAKAAAAAABAAAAAAQAKAAEAAABAAAEAAQAKAAIAAABAAAIAAQAKAAMAAABAAAMAAQAKAAQAAABAAAQAAQAKAAUAAABBAP//AQALAAAAAABBAAAAAQALAAEAAABBAAEAAQALAAIAAABBAAIAAQALAAMAAABBAAMAAQALAAQAAABBAAQAAQALAAUAAABCAP//AQALAAAAAABCAAAAAQALAAEAAABCAAEAAQALAAIAAABCAAIAAQALAAMAAABCAAMAAQALAAQAAABCAAQAAQALAAUAAABDAP//AQAMAAAAAABDAAAAAQAMAAEAAABDAAEAAQAMAAIAAABDAAIAAQAMAAMAAABDAAMAAQAMAAQAAABDAAQAAQAMAAUAAAA=")
+tile_set = ExtResource("2_mqfad")
+
+[node name="time_ui" parent="Barrita Tiempo" instance=ExtResource("6_yj72a")]
+offset_left = -12.0
+offset_top = -16.0
+offset_right = 28.0
+offset_bottom = 24.0
+
+[connection signal="pressed" from="Barrita/Construction" to="Barrita/Construction" method="_on_pressed"]
