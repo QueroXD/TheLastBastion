@@ -1,49 +1,26 @@
-[gd_scene load_steps=5 format=3 uid="uid://dc5wjmmu0q8en"]
+[gd_scene load_steps=4 format=3 uid="uid://dc5wjmmu0q8en"]
 
-[ext_resource type="Texture2D" uid="uid://6hoomebuyvgo" path="res://img/popup_background.png" id="1_gejmj"]
+[ext_resource type="Texture2D" uid="uid://b7hev4cbwvh7v" path="res://img/popup_background.png" id="1_gejmj"]
 [ext_resource type="Script" path="res://build.gd" id="1_i2mu1"]
-[ext_resource type="Texture2D" uid="uid://o1bkrmbnq7fd" path="res://img/SpriteHouse.png" id="2_meqvv"]
-[ext_resource type="Texture2D" uid="uid://dnlf1tgvaaimu" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/delete.png" id="3_4cii0"]
+[ext_resource type="Texture2D" uid="uid://dv4eykwb2orxt" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/delete.png" id="3_4cii0"]
 
 [node name="Build" type="Node2D"]
 script = ExtResource("1_i2mu1")
 
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 623.0
-offset_top = 269.0
-offset_right = 1376.0
-offset_bottom = 759.0
+[node name="box" type="TextureRect" parent="."]
+offset_left = 320.0
+offset_top = 125.0
+offset_right = 1073.0
+offset_bottom = 615.0
+scale = Vector2(0.75, 0.75)
 texture = ExtResource("1_gejmj")
 
-[node name="Button" type="Button" parent="TextureRect"]
-layout_mode = 0
-offset_left = 34.0
-offset_top = 78.0
-offset_right = 252.0
-offset_bottom = 459.0
-icon = ExtResource("2_meqvv")
-
-[node name="Button2" type="Button" parent="TextureRect"]
-layout_mode = 0
-offset_left = 267.0
-offset_top = 78.0
-offset_right = 487.0
-offset_bottom = 459.0
-icon = ExtResource("2_meqvv")
-
-[node name="Button3" type="Button" parent="TextureRect"]
-layout_mode = 0
-offset_left = 499.0
-offset_top = 78.0
-offset_right = 719.0
-offset_bottom = 459.0
-icon = ExtResource("2_meqvv")
-
-[node name="Cerrar" type="Button" parent="TextureRect"]
+[node name="Cerrar" type="Button" parent="box"]
 layout_mode = 0
 offset_left = 680.0
 offset_top = 28.0
 offset_right = 720.0
 offset_bottom = 68.0
+scale = Vector2(0.75, 0.75)
 icon = ExtResource("3_4cii0")
 flat = true
