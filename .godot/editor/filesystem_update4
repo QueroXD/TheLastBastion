@@ -1,5 +1,3 @@
 res://Map.tscn
 res://main.tscn
-res://camera_2d.gd
-res://ui.gd
-res://main.gd
+res://ui.tscn
