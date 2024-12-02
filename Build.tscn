@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://dc5wjmmu0q8en"]
 
-[ext_resource type="Texture2D" uid="uid://3qykhe514igb" path="res://img/popup_background.png" id="1_gejmj"]
+[ext_resource type="Texture2D" uid="uid://6hoomebuyvgo" path="res://img/popup_background.png" id="1_gejmj"]
 [ext_resource type="Script" path="res://build.gd" id="1_i2mu1"]
-[ext_resource type="Texture2D" uid="uid://byu861sulienk" path="res://img/SpriteHouse.png" id="2_meqvv"]
-[ext_resource type="Texture2D" uid="uid://cp305yfitk6vc" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/delete.png" id="3_4cii0"]
+[ext_resource type="Texture2D" uid="uid://o1bkrmbnq7fd" path="res://img/SpriteHouse.png" id="2_meqvv"]
+[ext_resource type="Texture2D" uid="uid://dnlf1tgvaaimu" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/delete.png" id="3_4cii0"]
 
 [node name="Build" type="Node2D"]
 script = ExtResource("1_i2mu1")
