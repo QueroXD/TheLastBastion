@@ -6,7 +6,7 @@ var build_instance: Node2D
 # Método que se ejecuta cuando se presiona el botón "Construction"
 func _on_Construction_pressed():
 	# Desactiva el botón para que no se pueda presionar
-	$TextureRect/Construction.disabled = true
+	$Menu/Construction.disabled = true
 	
 	# Instancia y agrega la escena Build
 	build_instance = build_scene.instantiate()
@@ -18,10 +18,11 @@ func _on_Construction_pressed():
 # Método que se ejecuta cuando se cierra la escena Build
 func _on_build_scene_closed():
 	# Habilitamos nuevamente el botón
-	$TextureRect/Construction.disabled = false
+	$Menu/Construction.disabled = false
+	
 
 # Conexión de la señal al presionar el botón "Construction"
-@onready var button_construction = $TextureRect/Construction
+@onready var button_construction = $Menu/Construction
 
 func _ready():
 	# Verifica si el botón "Construction" se ha cargado correctamente
