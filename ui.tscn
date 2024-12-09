@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=4 uid="uid://beo2f3rpe5yte"]
 
 [ext_resource type="Script" path="res://ui.gd" id="1_ixamc"]
-[ext_resource type="Texture2D" uid="uid://cln7r58jq6jgn" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/gear.png" id="2_5nq0a"]
+[ext_resource type="Texture2D" uid="uid://tn2ur6nw43f8" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/gear.png" id="2_5nq0a"]
 [ext_resource type="TileSet" uid="uid://bl7ilct1lp1u1" path="res://Assets/barrapanel.tres" id="2_ucueh"]
-[ext_resource type="Texture2D" uid="uid://bkthcn77falat" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/book.png" id="3_25a44"]
-[ext_resource type="Texture2D" uid="uid://bhfikheqf4g0b" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/tool_items.png" id="4_hxdlf"]
+[ext_resource type="Texture2D" uid="uid://b0c7qx0klucdm" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/book.png" id="3_25a44"]
+[ext_resource type="Texture2D" uid="uid://d4b3ewgx1xuxd" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/tool_items.png" id="4_hxdlf"]
 [ext_resource type="PackedScene" uid="uid://y3d6tf6lj2b6" path="res://time_ui.tscn" id="6_rtvll"]
 
 [node name="UI" type="Control"]
