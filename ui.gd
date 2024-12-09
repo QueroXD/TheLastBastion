@@ -8,29 +8,29 @@ var book_instance: Node2D
 
 # Método que se ejecuta cuando se presiona el botón "Construction"
 func _on_Construction_pressed():
-	$TextureRect/Construction.disabled = true
+	$Menu/Construction.disabled = true
 	build_instance = build_scene.instantiate()
 	add_child(build_instance)
 	build_instance.connect("tree_exited", Callable(self, "_on_build_scene_closed"))
 
 # Método que se ejecuta cuando se presiona el botón "Book"
 func _on_Book_pressed():
-	$TextureRect/Book.disabled = true
+	$Menu/Book.disabled = true
 	book_instance = libro_scene.instantiate()
 	add_child(book_instance)
 	book_instance.connect("tree_exited", Callable(self, "_on_book_scene_closed"))
 
 # Método que se ejecuta cuando se cierra la escena Build
 func _on_build_scene_closed():
-	$TextureRect/Construction.disabled = false
+	$Menu/Construction.disabled = false
 
 # Método que se ejecuta cuando se cierra la escena NotasDiarias
 func _on_book_scene_closed():
-	$TextureRect/Book.disabled = false
+	$Menu/Book.disabled = false
 
 # Conexión de la señal al presionar los botones
-@onready var button_construction = $TextureRect/Construction
-@onready var button_book = $TextureRect/Book
+@onready var button_construction = $Menu/Construction
+@onready var button_book = $Menu/Book
 
 func _ready():
 	# Verifica si el botón "Construction" se ha cargado correctamente

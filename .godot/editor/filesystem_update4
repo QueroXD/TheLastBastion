@@ -1,6 +1,6 @@
-res://ui.tscn
-res://Assets/barrapanel.tres
-res://Map.tscn
 res://main.tscn
+res://Map/Map.tres
+res://Assets/barrapanel.tres
+res://ui.tscn
 res://time_ui.tscn
 res://ui.gd
