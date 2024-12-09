@@ -4,6 +4,3 @@ res://ui.tscn
 res://time_ui.tscn
 res://NotasDiarias.tscn
 res://Build.tscn
-res://next_day_button.gd
-res://build.gd
-res://ui.gd

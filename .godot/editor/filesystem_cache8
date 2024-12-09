@@ -1,23 +1,23 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1733765985
-build.gd::GDScript::-1::1733164397::0::1::::<>Node2D<>::
-Build.tscn::PackedScene::7362923566723806249::1733251515::0::1::::<><>::uid://3qykhe514igb::::res://img/popup_background.png<>res://build.gd<>uid://byu861sulienk::::res://img/SpriteHouse.png<>uid://cp305yfitk6vc::::res://Assets/rpgiab_icon_pack_v1.3/32x32/delete.png
+::res://::1733768904
+build.gd::GDScript::-1::1733768307::0::1::::<>Node2D<>::
+Build.tscn::PackedScene::7362923566723806249::1733768612::0::1::::<><>::uid://3qykhe514igb::::res://img/popup_background.png<>res://build.gd<>uid://byu861sulienk::::res://img/SpriteHouse.png<>uid://cp305yfitk6vc::::res://Assets/rpgiab_icon_pack_v1.3/32x32/delete.png
 buildable_sprite.tscn::PackedScene::4495588078811766650::1733161307::0::1::::<><>::uid://dkd7dwvw55glv::::res://Assets/House/houses.png
 camera_2d.gd::GDScript::-1::1732556262::0::1::::<>Camera2D<>::
 Global.gd::GDScript::-1::1733164018::0::1::::<>Node<>::
 icon.svg::CompressedTexture2D::3368103934904702007::1731346945::1733161368::1::::<><>::
 logo-lastbastion.png::CompressedTexture2D::7832490749338545609::1731951957::1733161368::1::::<><>::
 main.gd::GDScript::-1::1732556262::0::1::::<>Node2D<>::
-main.tscn::PackedScene::435414447577857410::1733251515::0::1::::<><>::uid://c5b7we8ves10h::::res://Map.tscn<>res://main.gd<>uid://beo2f3rpe5yte::::res://ui.tscn<>res://camera_2d.gd
+main.tscn::PackedScene::435414447577857410::1733768612::0::1::::<><>::uid://c5b7we8ves10h::::res://Map.tscn<>res://main.gd<>uid://beo2f3rpe5yte::::res://ui.tscn<>res://camera_2d.gd
 map.gd::GDScript::-1::1732559887::0::1::::<>Node2D<>::
-Map.tscn::PackedScene::6882553547547841905::1733251515::0::1::::<><>::uid://cxlw2grpy4y7b::::res://Map/Map.png<>uid://mywl68tdmvhg::::res://Assets/AnimatedTreeFree/Freedecorations.png
-next_day_button.gd::GDScript::-1::1733162192::0::1::::<>Control<>::
-NotasDiarias.tscn::PackedScene::6987370785715185372::1733252202::0::1::::<><>::uid://c4jogmdjx4hvn::::res://Pergamino Notas del dia.png<>res://build.gd<>uid://cp305yfitk6vc::::res://Assets/rpgiab_icon_pack_v1.3/32x32/delete.png<>uid://clkgf1v2lawy4::::res://Assets/Fonts/Kenney Mini Square.ttf
+Map.tscn::PackedScene::6882553547547841905::1733768612::0::1::::<><>::uid://cxlw2grpy4y7b::::res://Map/Map.png<>uid://mywl68tdmvhg::::res://Assets/AnimatedTreeFree/Freedecorations.png
+next_day_button.gd::GDScript::-1::1733767175::0::1::::<>Control<>::
+NotasDiarias.tscn::PackedScene::6987370785715185372::1733768612::0::1::::<><>::uid://c4jogmdjx4hvn::::res://Pergamino Notas del dia.png<>res://build.gd<>uid://cp305yfitk6vc::::res://Assets/rpgiab_icon_pack_v1.3/32x32/delete.png<>uid://clkgf1v2lawy4::::res://Assets/Fonts/Kenney Mini Square.ttf
 Pergamino Notas del dia.png::CompressedTexture2D::6827758620693257259::1733161770::1733161771::1::::<><>::
 time_ui.gd::GDScript::-1::1733164116::0::1::::<>Control<>::
-time_ui.tscn::PackedScene::1742573342107059781::1733251515::0::1::::<><>::res://time_ui.gd<>uid://clkgf1v2lawy4::::res://Assets/Fonts/Kenney Mini Square.ttf<>uid://b6ddevsnb1iry::::res://Assets/rpgiab_icon_pack_v1.3/32x32/arrow_speed.png
-ui.gd::GDScript::-1::1731953281::0::1::::<>Control<>::
-ui.tscn::PackedScene::2697727132179849786::1733251515::0::1::::<><>::res://ui.gd<>uid://k5u08jnqrse7::::res://img/ui_bar_left.png<>uid://dq0o6ep0xtme0::::res://Assets/rpgiab_icon_pack_v1.3/32x32/gear.png<>uid://b0dr0meaxmyyq::::res://Assets/rpgiab_icon_pack_v1.3/32x32/book.png<>uid://cw2rhga1xkiy3::::res://Assets/rpgiab_icon_pack_v1.3/32x32/tool_items.png<>uid://y3d6tf6lj2b6::::res://time_ui.tscn
+time_ui.tscn::PackedScene::1742573342107059781::1733768612::0::1::::<><>::res://time_ui.gd<>uid://clkgf1v2lawy4::::res://Assets/Fonts/Kenney Mini Square.ttf<>uid://b6ddevsnb1iry::::res://Assets/rpgiab_icon_pack_v1.3/32x32/arrow_speed.png
+ui.gd::GDScript::-1::1733768604::0::1::::<>Control<>::
+ui.tscn::PackedScene::2697727132179849786::1733768612::0::1::::<><>::res://ui.gd<>uid://k5u08jnqrse7::::res://img/ui_bar_left.png<>uid://dq0o6ep0xtme0::::res://Assets/rpgiab_icon_pack_v1.3/32x32/gear.png<>uid://b0dr0meaxmyyq::::res://Assets/rpgiab_icon_pack_v1.3/32x32/book.png<>uid://cw2rhga1xkiy3::::res://Assets/rpgiab_icon_pack_v1.3/32x32/tool_items.png<>uid://y3d6tf6lj2b6::::res://time_ui.tscn
 ::res://Assets/::1733251647
 barrapanel.tres::TileSet::3225063567111080914::1733161307::0::1::::<><>::uid://dylj12ipw0357::::res://Assets/tileset_barra.png
 tileset_barra.png::CompressedTexture2D::7549054225347214400::1733161307::1733161368::1::::<><>::
