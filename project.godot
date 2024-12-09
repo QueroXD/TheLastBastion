@@ -17,6 +17,7 @@ config/icon="res://logo-lastbastion.png"
 
 [autoload]
 
+Global="*res://Global.gd"
 Globals="*res://globals.gd"
 
 [display]
