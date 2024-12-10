@@ -1,8 +1,7 @@
-res://Assets/barrapanel.tres
-res://Build.tscn
-res://build.gd
 res://main.tscn
+res://Assets/barrapanel.tres
 res://ui.tscn
 res://time_ui.tscn
 res://Objects/casa.tscn
+res://Build.tscn
 res://Objects/casa_roja.tscn
