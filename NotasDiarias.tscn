@@ -1,21 +1,21 @@
 [gd_scene load_steps=5 format=3 uid="uid://c6sy8ghv70wgq"]
 
-[ext_resource type="Texture2D" uid="uid://c4jogmdjx4hvn" path="res://Pergamino Notas del dia.png" id="1_51iwi"]
-[ext_resource type="Script" path="res://build.gd" id="1_x8tho"]
-[ext_resource type="Texture2D" uid="uid://cp305yfitk6vc" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/delete.png" id="2_6hr03"]
-[ext_resource type="FontFile" uid="uid://clkgf1v2lawy4" path="res://Assets/Fonts/Kenney Mini Square.ttf" id="4_8qlme"]
+[ext_resource type="Texture2D" uid="uid://dosirlfukqxb0" path="res://Pergamino Notas del dia.png" id="1_51iwi"]
+[ext_resource type="Script" path="res://notas_diarias.gd" id="1_h5vkc"]
+[ext_resource type="Texture2D" uid="uid://dv4eykwb2orxt" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/delete.png" id="2_6hr03"]
+[ext_resource type="FontFile" uid="uid://6e3clsfjjcg4" path="res://Assets/Fonts/Kenney Mini Square.ttf" id="4_8qlme"]
 
 [node name="NotasDiarias" type="Node2D"]
-script = ExtResource("1_x8tho")
+script = ExtResource("1_h5vkc")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="Nota" type="TextureRect" parent="."]
 offset_left = 33.0
 offset_top = -94.0
 offset_right = 1126.0
 offset_bottom = 732.0
 texture = ExtResource("1_51iwi")
 
-[node name="Cerrar" type="Button" parent="TextureRect"]
+[node name="Cerrar" type="Button" parent="Nota"]
 layout_mode = 0
 offset_left = 787.0
 offset_top = 141.0
@@ -24,7 +24,7 @@ offset_bottom = 181.0
 icon = ExtResource("2_6hr03")
 flat = true
 
-[node name="Titulo" type="Label" parent="TextureRect"]
+[node name="Titulo" type="Label" parent="Nota"]
 layout_mode = 0
 offset_left = 318.0
 offset_top = 153.0
@@ -32,7 +32,7 @@ offset_right = 769.0
 offset_bottom = 193.0
 theme_override_fonts/font = ExtResource("4_8qlme")
 
-[node name="NotaDiaria" type="Label" parent="TextureRect"]
+[node name="NotaDiaria" type="Label" parent="Nota"]
 layout_mode = 0
 offset_left = 318.0
 offset_top = 265.0

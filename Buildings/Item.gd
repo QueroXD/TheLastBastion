@@ -4,7 +4,6 @@ func _ready():
 	pass
 
 func _process(delta):
-	#$BuildMenu.hide()	
 	var local_mouse_position = GameManager.tilemap.to_local(get_global_mouse_position())
 	var mouse_tile = GameManager.tilemap.local_to_map(local_mouse_position)
 	var local_pos = GameManager.tilemap.map_to_local(mouse_tile)

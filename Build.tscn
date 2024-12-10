@@ -8,21 +8,22 @@
 [node name="Build" type="Node2D"]
 script = ExtResource("1_i2mu1")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="MenuBuild" type="TextureRect" parent="."]
 offset_left = 206.0
 offset_top = 77.0
 offset_right = 959.0
 offset_bottom = 567.0
 texture = ExtResource("1_gejmj")
 
-[node name="Slot" parent="TextureRect" instance=ExtResource("3_um327")]
+[node name="Slot" parent="MenuBuild" instance=ExtResource("3_um327")]
 layout_mode = 0
 offset_left = 50.0
 offset_top = 115.0
 offset_right = 178.0
 offset_bottom = 243.0
 
-[node name="Cerrar" type="Button" parent="TextureRect"]
+[node name="Cerrar" type="Button" parent="MenuBuild"]
+layout_mode = 0
 offset_left = 688.0
 offset_top = 2.0
 offset_right = 728.0

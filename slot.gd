@@ -2,12 +2,12 @@ extends Button
 
 @export var item_name: String
 
-var texture_inside: Texture = null
+var texture_inside: Sprite2D
 
 func _ready():
-	texture_inside = load("res://Buildings/LightHouse.png")
-	$SlotRect.texture = texture_inside
+	var sprite = Sprite2D.new()
+	sprite.texture = load("res://Buildings/LightHouse.png")
+	texture_inside = sprite
 
-func _on_gui_input(event: InputEvent) -> void:
-	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-		GameManager.emit_signal("item_selected", texture_inside)
+func _on_button_down() -> void:
+	GameManager.item_select(texture_inside)
