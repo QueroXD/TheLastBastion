@@ -17,6 +17,7 @@ config/icon="res://logo-lastbastion.png"
 
 [autoload]
 
+GameManager="*res://Scripts/Global/GameManager.gd"
 Global="*res://Global.gd"
 Globals="*res://globals.gd"
 

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bo5q5j12w41xu"]
+
+[ext_resource type="Script" path="res://slot.gd" id="1_olo5o"]
+[ext_resource type="Texture2D" uid="uid://b3lnl17wgsrme" path="res://Buildings/LightHouse.png" id="2_w7nhd"]
+
+[node name="Slot" type="Button"]
+offset_right = 128.0
+offset_bottom = 128.0
+script = ExtResource("1_olo5o")
+
+[node name="SlotRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 32.0
+offset_right = 96.0
+offset_bottom = 128.0
+texture = ExtResource("2_w7nhd")
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

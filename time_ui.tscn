@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://y3d6tf6lj2b6"]
 
 [ext_resource type="Script" path="res://time_ui.gd" id="1_6ew8b"]
-[ext_resource type="FontFile" uid="uid://clkgf1v2lawy4" path="res://Assets/Fonts/Kenney Mini Square.ttf" id="2_ty0iq"]
-[ext_resource type="Texture2D" uid="uid://b6ddevsnb1iry" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/arrow_speed.png" id="3_4gdft"]
+[ext_resource type="FontFile" uid="uid://6e3clsfjjcg4" path="res://Assets/Fonts/Kenney Mini Square.ttf" id="2_ty0iq"]
+[ext_resource type="Texture2D" uid="uid://cawx1l805xl8t" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/arrow_speed.png" id="3_4gdft"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_6ro3b"]
 font = ExtResource("2_ty0iq")
