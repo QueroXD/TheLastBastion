@@ -1,12 +1,19 @@
 ea4bc82a6ad023ab7ee23ee620429895
+<<<<<<< Updated upstream
 ::res://::1733847090
 build.gd::GDScript::-1::1733847066::0::1::::<>Node2D<>::
 Build.tscn::PackedScene::7362923566723806249::1733847066::0::1::::<><>::uid://b7hev4cbwvh7v::::res://img/popup_background.png<>res://build.gd<>uid://dv4eykwb2orxt::::res://Assets/rpgiab_icon_pack_v1.3/32x32/delete.png
+=======
+::res://::1733247750
+build.gd::GDScript::-1::1733164691::0::1::::<>Node2D<>::
+Build.tscn::PackedScene::7362923566723806249::1733164889::0::1::::<><>::uid://b7hev4cbwvh7v::::res://img/popup_background.png<>res://build.gd<>uid://dv4eykwb2orxt::::res://Assets/rpgiab_icon_pack_v1.3/32x32/delete.png
+>>>>>>> Stashed changes
 buildable_sprite.tscn::PackedScene::4495588078811766650::1733162588::0::1::::<><>::uid://dkd7dwvw55glv::::res://Assets/House/houses.png
 camera_2d.gd::GDScript::-1::1733162588::0::1::::<>Camera2D<>::
 icon.svg::CompressedTexture2D::3368103934904702007::1733162588::1733847096::1::::<><>::
 logo-lastbastion.png::CompressedTexture2D::2279785476551948995::1733162588::1733847096::1::::<><>::
 main.gd::GDScript::-1::1733162588::0::1::::<>Node2D<>::
+<<<<<<< Updated upstream
 main.tscn::PackedScene::435414447577857410::1733847066::0::1::::<><>::uid://c5b7we8ves10h::::res://Map.tscn<>res://main.gd<>uid://beo2f3rpe5yte::::res://ui.tscn<>res://camera_2d.gd
 Map.tscn::PackedScene::6882553547547841905::1733847066::0::1::::<><>::uid://cbnj22ite2kre::::res://Map/Map.png<>uid://cyc6cnh4k0xcc::::res://Assets/AnimatedTreeFree/Freedecorations.png
 time_ui.gd::GDScript::-1::1733847066::0::1::::<>Control<>::
@@ -23,6 +30,24 @@ Freedecorations.png::CompressedTexture2D::1999938179416435022::1733162588::17338
 Kenney Mini Square.ttf::FontFile::4629349765870616860::1733162588::1733847094::1::::<><>::
 ::res://Assets/houses/::1733847066
 houses.png::CompressedTexture2D::7710048537117718294::1733847066::1733847098::1::::<><>::
+=======
+main.tscn::PackedScene::435414447577857410::1733164888::0::1::::<><>::uid://c5b7we8ves10h::::res://Map.tscn<>res://main.gd<>uid://beo2f3rpe5yte::::res://ui.tscn<>res://camera_2d.gd
+Map.tscn::PackedScene::6882553547547841905::1733162588::0::1::::<><>::uid://cbnj22ite2kre::::res://Map/Map.png<>uid://cyc6cnh4k0xcc::::res://Assets/AnimatedTreeFree/Freedecorations.png
+time_ui.gd::GDScript::-1::1733162588::0::1::::<>Control<>::
+time_ui.tscn::PackedScene::1742573342107059781::1733164888::0::1::::<><>::res://time_ui.gd<>uid://6e3clsfjjcg4::::res://Assets/Fonts/Kenney Mini Square.ttf<>uid://cawx1l805xl8t::::res://Assets/rpgiab_icon_pack_v1.3/32x32/arrow_speed.png
+ui.gd::GDScript::-1::1733162891::0::1::::<>Control<>::
+ui.tscn::PackedScene::2697727132179849786::1733164888::0::1::::<><>::res://ui.gd<>uid://jv1d3ord6vkn::::res://Assets/rpgiab_icon_pack_v1.3/32x32/gear.png<>uid://bl7ilct1lp1u1::::res://Assets/barrapanel.tres<>uid://brs3aicy34f51::::res://Assets/rpgiab_icon_pack_v1.3/32x32/book.png<>uid://drghywmipeopf::::res://Assets/rpgiab_icon_pack_v1.3/32x32/tool_items.png<>uid://y3d6tf6lj2b6::::res://time_ui.tscn
+::res://Assets/::1733163379
+barrapanel.tres::TileSet::3225063567111080914::1733163379::0::1::::<><>::uid://djat2pqqphwnm::::res://Assets/tileset_barra.png
+tileset_barra.png::CompressedTexture2D::7792164296434025286::1733162588::1733163150::1::::<><>::
+::res://Assets/AnimatedTreeFree/::1733163152
+AnimatedAutum.png::CompressedTexture2D::47970057170551605::1733162588::1733163152::1::::<><>::
+Freedecorations.png::CompressedTexture2D::5059929492738101758::1733162588::1733163152::1::::<><>::
+::res://Assets/Fonts/::1733163149
+Kenney Mini Square.ttf::FontFile::2185815916983405289::1733162588::1733163149::1::::<><>::
+::res://Assets/houses/::1733163271
+houses.png::CompressedTexture2D::8225739033275464039::1733163268::1733163271::1::::<><>::
+>>>>>>> Stashed changes
 ::res://Assets/Isometric Asset Pack/::1733162588
 ::res://Assets/Map/::1733847066
 tile1.png::CompressedTexture2D::6841423557882701989::1733162588::1733847097::1::::<><>::
@@ -842,6 +867,12 @@ ui_bar_left.png::CompressedTexture2D::8967107839750009470::1733162588::173384709
 Iles-Kerguelen.png::CompressedTexture2D::8971471931389518488::1733162588::1733847096::1::::<><>::
 Map.png::CompressedTexture2D::3819001164591748923::1733847066::1733847096::1::::<><>::
 Map.tscn::PackedScene::7135767047176947929::1733162588::0::1::::<><>::
+<<<<<<< Updated upstream
 ::res://Objects/::1733847066
 casa.tscn::PackedScene::4225454518789052508::1733847066::0::1::::<><>::uid://dpguyqoehh4y2::::res://Assets/houses/houses.png
 casa_roja.tscn::PackedScene::4685971988882797069::1733847066::0::1::::<><>::uid://dpguyqoehh4y2::::res://Assets/houses/houses.png
+=======
+::res://Objects/::1733164889
+casa.tscn::PackedScene::4225454518789052508::1733164889::0::1::::<><>::uid://dpguyqoehh4y2::::res://Assets/houses/houses.png
+casa_roja.tscn::PackedScene::4685971988882797069::1733164889::0::1::::<><>::uid://dpguyqoehh4y2::::res://Assets/houses/houses.png
+>>>>>>> Stashed changes

@@ -5,3 +5,5 @@ res://time_ui.tscn
 res://Objects/casa.tscn
 res://Build.tscn
 res://Objects/casa_roja.tscn
+res://build.gd
+res://ui.gd

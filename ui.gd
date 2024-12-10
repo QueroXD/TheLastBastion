@@ -1,7 +1,7 @@
 extends Control
 
 @onready var build_scene = preload("res://Build.tscn")
-var build_instance: Node2D
+var build_instance: Control
 
 # Método que se ejecuta cuando se presiona el botón "Construction"
 func _on_Construction_pressed():

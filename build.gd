@@ -1,17 +1,22 @@
-extends Node2D
+extends Control
 
-@onready var build = $"."
-@onready var box = $box
+@onready var build = $"."        # Nodo "Build"
+@onready var box = $box          # Nodo "box" (TextureRect)
+@onready var grid_container = $box/GridContainer  # Nodo "GridContainer" dentro de "box"
 
-# Ruta a la carpeta de objetos
 const OBJECTS_FOLDER = "res://Objects"
+
+var current_scene = null  # Para mantener la referencia de la escena cargada
 
 func _ready():
 	if not box:
-		print("Error: El nodo 'box' no se encontró. Verifica la estructura de tu escena.")
+		print("Error: El nodo 'box' no se encontró.")
 		return
 	if not build:
-		print("Error: El nodo 'build' no se encontró. Verifica la estructura de tu escena.")
+		print("Error: El nodo 'build' no se encontró.")
+		return
+	if not grid_container:
+		print("Error: El nodo 'GridContainer' no se encontró dentro de 'box'.")
 		return
 	load_buttons()
 
@@ -28,20 +33,29 @@ func create_button(scene_name):
 	button.set_meta("scene_name", scene_name)
 	button.connect("pressed", Callable(self, "_on_button_pressed").bind(scene_name))
 	
-	# Verifica si el botón se añadió correctamente
-	build.add_child(button)
-	print("Botón agregado:", scene_name)  # Imprime si el botón fue agregado
+	# Añadir el botón al GridContainer dentro de "box"
+	grid_container.add_child(button)
+	print("Botón agregado:", scene_name)
 
 func _on_button_pressed(scene_name):
 	if not box:
 		print("Error: El nodo 'box' no está disponible para cargar la escena.")
 		return
+
 	var scene_path = OBJECTS_FOLDER + "/" + scene_name
 	var scene = load(scene_path).instantiate()
+
 	if scene:
 		clear_box()
-		scene.modulate = Color(1, 1, 1, 0.5) # Reduce la opacidad
+		scene.modulate = Color(1, 1, 1, 0.5)  # Reduce la opacidad
 		box.add_child(scene)
+		current_scene = scene  # Guardamos la referencia de la escena cargada
+		close_popup()  # Cierra el popup al presionar el botón
+		
+		# Cargar el contenido en la escena principal (main.tscn)
+		var main_scene = get_tree().root.get_node("Main")  # Accede a la escena principal en el árbol
+		if main_scene:
+			main_scene.add_child(scene)  # Agregar la escena cargada a la escena principal
 
 func clear_box():
 	if not box:
