@@ -13,8 +13,10 @@ shadow_color = Color(0, 0, 0, 0.615686)
 [node name="time_ui" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 133.0
+offset_top = 3.0
+offset_right = 173.0
+offset_bottom = 43.0
 script = ExtResource("1_6ew8b")
 
 [node name="NextDayButton" type="Button" parent="."]

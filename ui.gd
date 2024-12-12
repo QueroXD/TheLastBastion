@@ -2,12 +2,14 @@ extends Control
 
 @onready var build_scene = preload("res://Build.tscn")
 @onready var libro_scene = preload("res://NotasDiarias.tscn")
+@onready var buttonSound = $ButtonSound
 
 var build_instance: Node2D
 var book_instance: Node2D
 
 # Método que se ejecuta cuando se presiona el botón "Construction"
 func _on_Construction_pressed():
+	buttonSound.play(0.0)
 	$Menu/Construction.disabled = true
 	build_instance = build_scene.instantiate()
 	add_child(build_instance)
@@ -15,6 +17,7 @@ func _on_Construction_pressed():
 
 # Método que se ejecuta cuando se presiona el botón "Book"
 func _on_Book_pressed():
+	buttonSound.play(0.0)
 	$Menu/Book.disabled = true
 	book_instance = libro_scene.instantiate()
 	add_child(book_instance)
@@ -22,6 +25,7 @@ func _on_Book_pressed():
 
 # Método que se ejecuta cuando se cierra la escena Build
 func _on_build_scene_closed():
+	buttonSound.play(0.0)
 	$Menu/Construction.disabled = false
 
 # Método que se ejecuta cuando se cierra la escena NotasDiarias

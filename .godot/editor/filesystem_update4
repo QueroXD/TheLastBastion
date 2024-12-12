@@ -1,10 +1,7 @@
-res://Buildings/Item.tscn
-res://Map/Map.tres
-res://Assets/barrapanel.tres
-res://slot.gd
-res://Build.tscn
 res://main.tscn
-res://Map.tscn
-res://slot.tscn
-res://Scripts/Global/GameManager.gd
-res://Buildings/Item.gd
+res://intro.tscn
+res://Assets/barrapanel.tres
+res://Map/Map.tres
+res://ui.tscn
+res://time_ui.tscn
+res://Build.tscn

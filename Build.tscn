@@ -24,9 +24,9 @@ offset_bottom = 243.0
 
 [node name="Cerrar" type="Button" parent="MenuBuild"]
 layout_mode = 0
-offset_left = 688.0
-offset_top = 2.0
-offset_right = 728.0
-offset_bottom = 492.0
+offset_left = 690.0
+offset_top = 30.0
+offset_right = 730.0
+offset_bottom = 70.0
 icon = ExtResource("3_4cii0")
 flat = true
