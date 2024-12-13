@@ -1,14 +1,28 @@
+<<<<<<< HEAD
 CanvasLayer
 GPUParticles2D
 CPUParticles2D
 AudioStreamPlayer
 TextureRect
 Label
+=======
+TextureRect
+Timer
+Label
+TileMapLayer
+TileMap
+CPUParticles2D
+AudioStreamPlayer
+CanvasLayer
+>>>>>>> dev-hud
 CheckBox
 HSlider
 VBoxContainer
 MarginContainer
 AudioStreamPlayer2D
 TextureButton
+<<<<<<< HEAD
 AnimationPlayer
 Button
+=======
+>>>>>>> dev-hud

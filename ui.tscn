@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=4 uid="uid://beo2f3rpe5yte"]
+[gd_scene load_steps=10 format=4 uid="uid://beo2f3rpe5yte"]
 
 [ext_resource type="Script" path="res://ui.gd" id="1_ixamc"]
 [ext_resource type="Texture2D" uid="uid://jv1d3ord6vkn" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/gear.png" id="2_5nq0a"]
@@ -6,7 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://brs3aicy34f51" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/book.png" id="3_25a44"]
 [ext_resource type="Texture2D" uid="uid://drghywmipeopf" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/tool_items.png" id="4_hxdlf"]
 [ext_resource type="PackedScene" uid="uid://y3d6tf6lj2b6" path="res://time_ui.tscn" id="6_rtvll"]
-[ext_resource type="AudioStream" uid="uid://465xapt1ho6j" path="res://Audio/button_menu.wav" id="7_gt651"]
+[ext_resource type="AudioStream" uid="uid://crvfhba246px" path="res://Audio/button_menu.wav" id="7_gt651"]
+[ext_resource type="LabelSettings" uid="uid://btd1oqmfa7ni0" path="res://Assets/text_settings.tres" id="7_wttls"]
+[ext_resource type="Texture2D" uid="uid://5bjbdcegj423" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/character.png" id="8_kend2"]
 
 [node name="UI" type="Control"]
 layout_mode = 3
@@ -56,6 +58,30 @@ tile_set = ExtResource("2_ucueh")
 [node name="time_ui" parent="Fecha" instance=ExtResource("6_rtvll")]
 offset_left = -13.0
 offset_right = 27.0
+
+[node name="Contador" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAAMAAEAAQAAAAEAAAAMAAIAAQAAAAIAAAAMAAMAAQAAAAMAAAAMAAQAAQAAAAQAAAAMAAUAAQAAAAUAAAANAAAAAQABAAAAAAANAAEAAQABAAEAAAANAAIAAQABAAIAAAANAAMAAQABAAMAAAANAAQAAQABAAQAAAANAAUAAQABAAUAAAAOAAAAAQAMAAAAAAAOAAEAAQAMAAEAAAAOAAIAAQAMAAIAAAAOAAMAAQAMAAMAAAAOAAQAAQAMAAQAAAAOAAUAAQAMAAUAAAAPAAAAAQANAAAAAAAPAAEAAQANAAEAAAAPAAIAAQANAAIAAAAPAAMAAQANAAMAAAAPAAQAAQANAAQAAAAPAAUAAQANAAUAAAAQAAAAAQAOAAAAAAAQAAEAAQAOAAEAAAAQAAIAAQAOAAIAAAAQAAMAAQAOAAMAAAAQAAQAAQAOAAQAAAAQAAUAAQAOAAUAAAARAAAAAQAOAAAAAAARAAEAAQAOAAEAAAARAAIAAQAOAAIAAAARAAMAAQAOAAMAAAARAAQAAQAOAAQAAAARAAUAAQAOAAUAAAASAAAAAQAPAAAAAAASAAEAAQAPAAEAAAASAAIAAQAPAAIAAAASAAMAAQAPAAMAAAASAAQAAQAPAAQAAAASAAUAAQAPAAUAAAATAAEAAQAQAAEAAAATAAIAAQAQAAIAAAATAAMAAQAQAAMAAAATAAQAAQAQAAQAAAATAAUAAQAQAAUAAAATAAAAAQAQAAAAAAAUAAEAAQARAAEAAAAUAAIAAQARAAIAAAAUAAMAAQARAAMAAAAUAAQAAQARAAQAAAAUAAUAAQARAAUAAAA=")
+tile_set = ExtResource("2_ucueh")
+
+[node name="Habitantes" type="Label" parent="Contador"]
+offset_left = 256.0
+offset_top = 31.0
+offset_right = 312.0
+offset_bottom = 69.0
+text = "999"
+label_settings = ExtResource("7_wttls")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Timer" type="Timer" parent="Contador"]
+autostart = true
+
+[node name="IconoHab" type="TextureRect" parent="Contador"]
+offset_left = 209.0
+offset_top = 30.0
+offset_right = 249.0
+offset_bottom = 70.0
+texture = ExtResource("8_kend2")
 
 [node name="ButtonSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_gt651")
