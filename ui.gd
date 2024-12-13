@@ -37,8 +37,16 @@ func _on_book_scene_closed():
 # Conexión de la señal al presionar los botones
 @onready var button_construction = $Menu/Construction
 @onready var button_book = $Menu/Book
+@onready var habitantes = $Contador/Habitantes
+@onready var timer = $Contador/Timer
 
 func _ready():
+	
+	# Conecta la señal del Timer al método
+	timer.timeout.connect(_on_timer_timeout)
+	
+	habitantes.text = str(Global.poblacion)
+	
 	# Verifica si el botón "Construction" se ha cargado correctamente
 	if button_construction:
 		button_construction.connect("pressed", Callable(self, "_on_Construction_pressed"))
@@ -51,6 +59,9 @@ func _ready():
 	else:
 		print("No se pudo encontrar el botón 'Book'")
 
+func _on_timer_timeout():
+	# Actualiza el texto del Label con la variable global
+	habitantes.text = str(Global.poblacion)
 
 func _on_config_pressed() -> void:
 	buttonSound.play(0.0)
