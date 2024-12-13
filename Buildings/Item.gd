@@ -14,11 +14,11 @@ func _process(delta):
 	global_position = world_pos
 	
 	if $Area2D.get_overlapping_areas().size() > 0:
-		$Deny.show()
-		$Ok.hide()
+		$Area2D/CollisionShape2D/Deny.show()
+		$Area2D/CollisionShape2D/Ok.hide()
 	else:
-		$Ok.show()
-		$Deny.hide()
+		$Area2D/CollisionShape2D/Ok.show()
+		$Area2D/CollisionShape2D/Deny.hide()
 
 func _unhandled_input(event):
 	if event is InputEventMouseButton && event.pressed && event.button_index == MOUSE_BUTTON_LEFT:
@@ -31,5 +31,5 @@ func _unhandled_input(event):
 		set_process_unhandled_input(false)
 		$Area2D.monitoring = false
 		
-		$Ok.hide()
-		$Deny.hide()
+		$Area2D/CollisionShape2D/Ok.hide()
+		$Area2D/CollisionShape2D/Deny.hide()
