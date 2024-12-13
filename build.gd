@@ -9,3 +9,12 @@ func _on_ButtonCerrar_pressed():
 func _ready():
 	# Conectar el botón de cerrar
 	$MenuBuild/Cerrar.connect("pressed", Callable(self, "_on_ButtonCerrar_pressed"))
+
+func _on_slot_pressed() -> void:
+	queue_free()
+
+func _on_slot_2_pressed() -> void:
+	queue_free()
+
+func _on_slot_3_pressed() -> void:
+	queue_free()
