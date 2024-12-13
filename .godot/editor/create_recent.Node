@@ -1,7 +1,8 @@
+CanvasLayer
+GPUParticles2D
 CPUParticles2D
 AudioStreamPlayer
 TextureRect
-CanvasLayer
 Label
 CheckBox
 HSlider
@@ -11,5 +12,3 @@ AudioStreamPlayer2D
 TextureButton
 AnimationPlayer
 Button
-HBoxContainer
-Panel
