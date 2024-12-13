@@ -10,8 +10,8 @@ script = ExtResource("1_olo5o")
 [node name="SlotRect" type="TextureRect" parent="."]
 layout_mode = 0
 offset_left = 31.0
-offset_top = 42.0
+offset_top = 32.0
 offset_right = 95.0
-offset_bottom = 88.0
+offset_bottom = 96.0
 
 [connection signal="button_down" from="." to="." method="_on_button_down"]

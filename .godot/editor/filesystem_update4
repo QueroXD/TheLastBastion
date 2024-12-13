@@ -1,7 +1,2 @@
-res://Buildings/Item.tscn
-res://slot.gd
-res://Build.tscn
 res://slot.tscn
-res://Scripts/Global/GameManager.gd
-res://build.gd
 res://Buildings/Item.gd
