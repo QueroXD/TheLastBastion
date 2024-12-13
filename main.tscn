@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://main.gd" id="1_xcw4s"]
 [ext_resource type="PackedScene" uid="uid://beo2f3rpe5yte" path="res://ui.tscn" id="2_0f8nx"]
 [ext_resource type="Script" path="res://camera_2d.gd" id="3_duh21"]
-[ext_resource type="AudioStream" uid="uid://7bryujbqjuht" path="res://Audio/backgroun_music01.wav" id="5_qrc07"]
+[ext_resource type="AudioStream" uid="uid://c5bl3tm0fyjat" path="res://Audio/backgroun_music01.wav" id="5_qrc07"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_xcw4s")
@@ -24,6 +24,9 @@ offset_top = -1.0
 offset_bottom = -1.0
 grow_horizontal = 1
 grow_vertical = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="BackgroundMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_qrc07")
+volume_db = 24.0
+bus = &"Musica"

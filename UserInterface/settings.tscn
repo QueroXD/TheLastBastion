@@ -1,0 +1,88 @@
+[gd_scene load_steps=5 format=3 uid="uid://c8xl74uldp0k0"]
+
+[ext_resource type="Script" path="res://UserInterface/settings.gd" id="1_o065x"]
+[ext_resource type="Texture2D" uid="uid://dv4eykwb2orxt" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/delete.png" id="2_3c3x0"]
+[ext_resource type="LabelSettings" uid="uid://btd1oqmfa7ni0" path="res://Assets/text_settings.tres" id="2_4sdxo"]
+[ext_resource type="Texture2D" uid="uid://b7hev4cbwvh7v" path="res://img/popup_background.png" id="3_batpm"]
+
+[node name="Settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_o065x")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -278.0
+offset_top = -108.0
+offset_right = 258.0
+offset_bottom = 74.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.17225, 1.17225)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Audio_Text" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Volumen General:"
+label_settings = ExtResource("2_4sdxo")
+
+[node name="Audio" type="HSlider" parent="CanvasLayer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+min_value = -40.0
+max_value = 0.0
+
+[node name="Musica_Text" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Volumen de la musica:"
+label_settings = ExtResource("2_4sdxo")
+
+[node name="Musica" type="HSlider" parent="CanvasLayer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+min_value = -40.0
+max_value = 0.0
+value = -20.0
+
+[node name="Efectos_Text" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Volumen de los efectos de sonido:"
+label_settings = ExtResource("2_4sdxo")
+
+[node name="Efectos" type="HSlider" parent="CanvasLayer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+min_value = -40.0
+max_value = 0.0
+value = -20.0
+
+[node name="Cerrar" type="Button" parent="CanvasLayer"]
+offset_left = 959.0
+offset_top = 142.0
+offset_right = 999.0
+offset_bottom = 182.0
+icon = ExtResource("2_3c3x0")
+flat = true
+
+[node name="SettingsBackground" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 310.0
+offset_top = 120.0
+offset_right = 1023.0
+offset_bottom = 506.0
+texture = ExtResource("3_batpm")
+
+[connection signal="value_changed" from="CanvasLayer/MarginContainer/VBoxContainer/Audio" to="." method="_on_audio_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/MarginContainer/VBoxContainer/Musica" to="." method="_on_musica_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/MarginContainer/VBoxContainer/Efectos" to="." method="_on_efectos_value_changed"]

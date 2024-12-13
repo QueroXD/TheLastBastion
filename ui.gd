@@ -2,10 +2,12 @@ extends Control
 
 @onready var build_scene = preload("res://Build.tscn")
 @onready var libro_scene = preload("res://NotasDiarias.tscn")
+@onready var config_scene = preload("res://UserInterface/settings.tscn")
 @onready var buttonSound = $ButtonSound
 
 var build_instance: Node2D
 var book_instance: Node2D
+var config_instance: Control
 
 # Método que se ejecuta cuando se presiona el botón "Construction"
 func _on_Construction_pressed():
@@ -48,3 +50,15 @@ func _ready():
 		button_book.connect("pressed", Callable(self, "_on_Book_pressed"))
 	else:
 		print("No se pudo encontrar el botón 'Book'")
+
+
+func _on_config_pressed() -> void:
+	buttonSound.play(0.0)
+	$Menu/Config.disabled = true
+	config_instance = config_scene.instantiate()
+	add_child(config_instance)
+	config_instance.connect("tree_exited", Callable(self, "_on_config_scene_closed"))
+
+func _on_config_scene_closed():
+	buttonSound.play(0.0)
+	$Menu/Config.disabled = false

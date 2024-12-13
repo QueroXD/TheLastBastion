@@ -4,12 +4,15 @@ extends Control
 @onready var date_label = $DateLabel
 @onready var next_day_button = $NextDayButton
 @onready var popup_instance = preload("res://NotasDiarias.tscn")
+@onready var buttonSound = $ButtonSound
 
 func _ready():
 	date_label.text = "01-01-2044"
 	next_day_button.pressed.connect(on_button_pressed)
 
 func on_button_pressed():
+	buttonSound.play(0.0)
+
 	# Incrementar la fecha
 	var current_date = date_label.text
 	var date_parts = current_date.split("-")

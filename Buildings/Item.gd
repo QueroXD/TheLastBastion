@@ -1,5 +1,7 @@
 extends Sprite2D
 
+@onready var hammer = $Hammer
+
 func _ready():
 	pass
 
@@ -20,6 +22,7 @@ func _process(delta):
 
 func _unhandled_input(event):
 	if event is InputEventMouseButton && event.pressed && event.button_index == MOUSE_BUTTON_LEFT:
+		hammer.play(0.0)
 		var arr = $Area2D.get_overlapping_areas()
 		for obj in arr:
 			obj.get_parent().queue_free()

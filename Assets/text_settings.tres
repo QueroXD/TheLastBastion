@@ -1,0 +1,9 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://btd1oqmfa7ni0"]
+
+[ext_resource type="FontFile" uid="uid://6e3clsfjjcg4" path="res://Assets/Fonts/Kenney Mini Square.ttf" id="1_8smrh"]
+
+[resource]
+font = ExtResource("1_8smrh")
+font_size = 30
+shadow_size = 5
+shadow_color = Color(0, 0, 0, 0.615686)

@@ -18,7 +18,7 @@ func _ready():
 		
 	if texto_label:
 		# Ruta del archivo basado en la variable global
-		var file_path = "res://Assets/NotasDiarias/" + Global.mi_variable + ".txt"
+		var file_path = "res://Assets/NotasDiarias/" + Global.mi_variable + ".md"
 		# Intentamos leer el archivo
 		var file = FileAccess.open(file_path, FileAccess.READ)
 		if file:

@@ -1,11 +1,11 @@
 [gd_scene load_steps=10 format=3 uid="uid://dbj88qtbo6obd"]
 
-[ext_resource type="Texture2D" uid="uid://cw0rpv8vb1emk" path="res://img/cloud-icon-pixelart.png" id="1_cqvpq"]
+[ext_resource type="Texture2D" uid="uid://cyh4fonftyjye" path="res://img/cloud-icon-pixelart.png" id="1_cqvpq"]
 [ext_resource type="Script" path="res://intro.gd" id="1_w7edf"]
-[ext_resource type="Texture2D" uid="uid://rbvqxhfn0ucw" path="res://img/title-lastbastion.png" id="2_x62n0"]
-[ext_resource type="Texture2D" uid="uid://bsfix375ltg4t" path="res://img/START_Button.png" id="3_4leny"]
-[ext_resource type="AudioStream" uid="uid://cxk3dbh4ooxra" path="res://Audio/button_effect.wav" id="5_7iqde"]
-[ext_resource type="AudioStream" uid="uid://bc4v3pfpn06md" path="res://Audio/intro.wav" id="5_efdpk"]
+[ext_resource type="Texture2D" uid="uid://bsvrqequeyl15" path="res://img/title-lastbastion.png" id="2_x62n0"]
+[ext_resource type="Texture2D" uid="uid://dt5fbjokmhfjb" path="res://img/START_Button.png" id="3_4leny"]
+[ext_resource type="AudioStream" uid="uid://dgu1g8ic74ne1" path="res://Audio/button_effect.wav" id="5_7iqde"]
+[ext_resource type="AudioStream" uid="uid://c8idy6glqumt4" path="res://Audio/intro.wav" id="5_efdpk"]
 
 [sub_resource type="Animation" id="Animation_yp1b8"]
 length = 0.001
@@ -385,9 +385,13 @@ texture_normal = ExtResource("3_4leny")
 
 [node name="ButtonSound" type="AudioStreamPlayer" parent="CanvasLayer/Start"]
 stream = ExtResource("5_7iqde")
+volume_db = 24.0
+bus = &"Efectos"
 
 [node name="IntroMusic" type="AudioStreamPlayer" parent="CanvasLayer"]
 stream = ExtResource("5_efdpk")
+volume_db = 24.0
+bus = &"Musica"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
