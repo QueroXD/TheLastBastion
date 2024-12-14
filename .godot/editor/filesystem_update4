@@ -1,6 +1,7 @@
-res://Map.tscn
-res://Map/Map.tres
-res://Buildings/Item.tscn
 res://main.tscn
+res://Map/Map.tres
 res://Assets/barrapanel.tres
-res://nieve.tscn
+res://main.gd
+res://Buildings/Item.tscn
+res://Map.tscn
+res://snow.tscn
