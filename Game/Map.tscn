@@ -1,15 +1,15 @@
 [gd_scene load_steps=25 format=4 uid="uid://c5b7we8ves10h"]
 
 [ext_resource type="Script" path="res://Game/Scripts/map.gd" id="1_3p6fd"]
-[ext_resource type="Texture2D" uid="uid://di6f4kqfqjk22" path="res://Assets/Map/Map.png" id="1_wmx6y"]
+[ext_resource type="Texture2D" uid="uid://b8jw0j1kqakph" path="res://Assets/Map/Map.png" id="1_wmx6y"]
 [ext_resource type="Texture2D" uid="uid://cedckgg1rbda1" path="res://Assets/AnimatedTreeFree/Freedecorations.png" id="2_30imu"]
-[ext_resource type="Texture2D" uid="uid://d3kh1n3wtw5vy" path="res://Assets/Map/tree.png" id="3_w0okl"]
-[ext_resource type="Texture2D" uid="uid://cwvnx7fvt277y" path="res://Assets/Map/fog.png" id="4_fx84j"]
+[ext_resource type="Texture2D" uid="uid://i045w5y3gp23" path="res://Assets/Map/tree.png" id="3_w0okl"]
+[ext_resource type="Texture2D" uid="uid://dloxds7ycdgg4" path="res://Assets/Map/fog.png" id="4_fx84j"]
 [ext_resource type="TileSet" uid="uid://cxjdy4c2r8ca0" path="res://Assets/Map/Map.tres" id="5_syl3j"]
-[ext_resource type="Texture2D" uid="uid://cn8jw71xjbr5q" path="res://Assets/Map/tf_A2_atlantis.png" id="5_we7l0"]
-[ext_resource type="Texture2D" uid="uid://dl05j5gcshdsg" path="res://Assets/Map/tf_B_atlantisB.png" id="6_4afkr"]
+[ext_resource type="Texture2D" uid="uid://bfms05vk6xsok" path="res://Assets/Map/tf_A2_atlantis.png" id="5_we7l0"]
+[ext_resource type="Texture2D" uid="uid://ca4h0a8rhwrhk" path="res://Assets/Map/tf_B_atlantisB.png" id="6_4afkr"]
 [ext_resource type="Shader" path="res://Shader/water.gdshader" id="6_axms3"]
-[ext_resource type="Texture2D" uid="uid://b63ub5ua00y2y" path="res://Assets/Map/Water.png" id="7_akegd"]
+[ext_resource type="Texture2D" uid="uid://csxbd82dcxrel" path="res://Assets/Map/Water.png" id="7_akegd"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_dxhjj"]
 tile_data = PackedInt32Array(0, 458752, 5, 65536, 458752, 6, 1, 524288, 5, 65537, 524288, 6)
