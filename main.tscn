@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://main.gd" id="1_xcw4s"]
 [ext_resource type="PackedScene" uid="uid://beo2f3rpe5yte" path="res://ui.tscn" id="2_0f8nx"]
 [ext_resource type="Script" path="res://camera_2d.gd" id="3_duh21"]
-[ext_resource type="AudioStream" uid="uid://byum0wq3lxmhj" path="res://Audio/backgroun_music01.wav" id="5_qrc07"]
+[ext_resource type="AudioStream" uid="uid://c5bl3tm0fyjat" path="res://Audio/backgroun_music01.wav" id="5_qrc07"]
 
 [sub_resource type="Curve" id="Curve_e2ueu"]
 _data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.862126, 0.200568), -1.58657, -1.58657, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]

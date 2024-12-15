@@ -1,8 +1,10 @@
-res://Build.tscn
-res://Map/Map.tres
+res://main.tscn
 res://Assets/text_settings.tres
 res://Assets/text_notes_settings.tres
+res://Map/Map.tres
 res://Assets/barrapanel.tres
-res://main.tscn
 res://slot.tscn
 res://Buildings/Item.tscn
+res://Build.tscn
+res://Map.tscn
+res://main.gd
