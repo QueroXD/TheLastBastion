@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://bo5q5j12w41xu"]
+
+[ext_resource type="Script" path="res://Game/Scripts/slot.gd" id="1_olo5o"]
+
+[node name="Slot" type="Button"]
+offset_right = 128.0
+offset_bottom = 128.0
+script = ExtResource("1_olo5o")
+
+[node name="SlotRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch_mode = 3
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]
