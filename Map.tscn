@@ -6,10 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://d3kh1n3wtw5vy" path="res://Map/tree.png" id="3_w0okl"]
 [ext_resource type="Texture2D" uid="uid://cwvnx7fvt277y" path="res://Map/fog.png" id="4_fx84j"]
 [ext_resource type="TileSet" uid="uid://cxjdy4c2r8ca0" path="res://Map/Map.tres" id="5_syl3j"]
-[ext_resource type="Texture2D" uid="uid://cn8jw71xjbr5q" path="res://Map/tf_A2_atlantis.png" id="5_we7l0"]
-[ext_resource type="Texture2D" uid="uid://dl05j5gcshdsg" path="res://Map/tf_B_atlantisB.png" id="6_4afkr"]
+[ext_resource type="Texture2D" uid="uid://db8312isnrugc" path="res://Map/tf_A2_atlantis.png" id="5_we7l0"]
+[ext_resource type="Texture2D" uid="uid://bginpv75df4pw" path="res://Map/tf_B_atlantisB.png" id="6_4afkr"]
 [ext_resource type="Shader" path="res://Shader/water.gdshader" id="6_axms3"]
-[ext_resource type="Texture2D" uid="uid://b63ub5ua00y2y" path="res://Map/Water.png" id="7_akegd"]
+[ext_resource type="Texture2D" uid="uid://des6ig2j626ej" path="res://Map/Water.png" id="7_akegd"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_dxhjj"]
 tile_data = PackedInt32Array(0, 458752, 5, 65536, 458752, 6, 1, 524288, 5, 65537, 524288, 6)

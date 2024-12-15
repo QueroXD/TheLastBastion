@@ -1,10 +1,10 @@
 res://main.tscn
-res://Assets/text_settings.tres
-res://Assets/text_notes_settings.tres
 res://Map/Map.tres
 res://Assets/barrapanel.tres
 res://slot.tscn
 res://Buildings/Item.tscn
 res://Build.tscn
 res://Map.tscn
-res://main.gd
+res://time_ui.gd
+res://ciclo_dia.tscn
+res://Assets/daynightcycle-gradient-texture.tres

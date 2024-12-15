@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvn1mvla607um"]
+
+[ext_resource type="Script" path="res://dia_noche.gd" id="1_0yhjp"]
+[ext_resource type="Texture2D" uid="uid://c7v52nvtrjapx" path="res://Assets/daynightcycle-gradient-texture.tres" id="2_estp5"]
+
+[node name="CicloDia" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="DiaNoche" type="CanvasModulate" parent="."]
+color = Color(0.133333, 0.14902, 0.25098, 1)
+script = ExtResource("1_0yhjp")
+gradient_texture = ExtResource("2_estp5")
