@@ -5,7 +5,7 @@ extends Control
 @onready var next_day_button = $NextDayButton
 @onready var popup_instance = preload("res://Game/NotasDiarias.tscn")
 @onready var buttonSound = $ButtonSound
-@onready var diaNoche = preload("res://ciclo_dia.tscn")
+@onready var diaNoche = preload("res://Game/ciclo_dia.tscn")
 
 var ciclo_instance: Control
 
