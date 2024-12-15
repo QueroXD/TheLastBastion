@@ -1,0 +1,67 @@
+[gd_scene load_steps=11 format=3 uid="uid://gg6hhpxi0d5s"]
+
+[ext_resource type="PackedScene" uid="uid://c5b7we8ves10h" path="res://Game/Map.tscn" id="1_l2aq6"]
+[ext_resource type="Script" path="res://Game/Scripts/main.gd" id="1_xcw4s"]
+[ext_resource type="PackedScene" uid="uid://beo2f3rpe5yte" path="res://Game/ui.tscn" id="2_0f8nx"]
+[ext_resource type="Script" path="res://Game/Scripts/camera_2d.gd" id="3_duh21"]
+[ext_resource type="AudioStream" uid="uid://c5bl3tm0fyjat" path="res://Audio/backgroun_music01.wav" id="5_qrc07"]
+
+[sub_resource type="Curve" id="Curve_e2ueu"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.862126, 0.200568), -1.58657, -1.58657, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_ucegw"]
+curve = SubResource("Curve_e2ueu")
+
+[sub_resource type="Gradient" id="Gradient_dykq0"]
+offsets = PackedFloat32Array(0.503546, 0.624114)
+colors = PackedColorArray(1, 1, 1, 0.352941, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_nblm7"]
+gradient = SubResource("Gradient_dykq0")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_m7emu"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(1000, 1, 1)
+gravity = Vector3(45, 98, 0)
+scale_max = 4.0
+color_initial_ramp = SubResource("GradientTexture1D_nblm7")
+alpha_curve = SubResource("CurveTexture_ucegw")
+turbulence_enabled = true
+turbulence_influence_min = 0.02
+turbulence_influence_max = 0.08
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_xcw4s")
+
+[node name="Floor" parent="." instance=ExtResource("1_l2aq6")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1482, 2533)
+anchor_mode = 0
+script = ExtResource("3_duh21")
+
+[node name="UI" parent="Camera2D" instance=ExtResource("2_0f8nx")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_top = -1.0
+offset_bottom = -1.0
+grow_horizontal = 1
+grow_vertical = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Snow" type="GPUParticles2D" parent="CanvasLayer"]
+position = Vector2(669, 2)
+amount = 2000
+process_material = SubResource("ParticleProcessMaterial_m7emu")
+lifetime = 30.0
+preprocess = 30.0
+
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_qrc07")
+volume_db = 24.0
+bus = &"Musica"

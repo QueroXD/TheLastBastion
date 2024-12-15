@@ -1,0 +1,58 @@
+[gd_scene load_steps=5 format=3 uid="uid://dc5wjmmu0q8en"]
+
+[ext_resource type="Texture2D" uid="uid://b7hev4cbwvh7v" path="res://Assets/img/popup_background.png" id="1_gejmj"]
+[ext_resource type="Script" path="res://Game/Scripts/build.gd" id="1_i2mu1"]
+[ext_resource type="Texture2D" uid="uid://dv4eykwb2orxt" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/delete.png" id="3_4cii0"]
+[ext_resource type="PackedScene" uid="uid://bo5q5j12w41xu" path="res://Game/slot.tscn" id="3_um327"]
+
+[node name="Build" type="Node2D"]
+script = ExtResource("1_i2mu1")
+
+[node name="MenuBuild" type="TextureRect" parent="."]
+offset_left = 206.0
+offset_top = 77.0
+offset_right = 959.0
+offset_bottom = 567.0
+texture = ExtResource("1_gejmj")
+
+[node name="Slot" parent="MenuBuild" instance=ExtResource("3_um327")]
+layout_mode = 0
+offset_left = 109.0
+offset_top = 193.0
+offset_right = 237.0
+offset_bottom = 321.0
+
+[node name="Slot2" parent="MenuBuild" instance=ExtResource("3_um327")]
+layout_mode = 0
+offset_left = 248.0
+offset_top = 193.0
+offset_right = 376.0
+offset_bottom = 321.0
+
+[node name="Slot3" parent="MenuBuild" instance=ExtResource("3_um327")]
+layout_mode = 0
+offset_left = 387.0
+offset_top = 193.0
+offset_right = 515.0
+offset_bottom = 321.0
+
+[node name="Slot4" parent="MenuBuild" instance=ExtResource("3_um327")]
+layout_mode = 0
+offset_left = 526.0
+offset_top = 193.0
+offset_right = 654.0
+offset_bottom = 321.0
+
+[node name="Cerrar" type="Button" parent="MenuBuild"]
+layout_mode = 0
+offset_left = 690.0
+offset_top = 30.0
+offset_right = 730.0
+offset_bottom = 70.0
+icon = ExtResource("3_4cii0")
+flat = true
+
+[connection signal="pressed" from="MenuBuild/Slot" to="." method="_on_slot_pressed"]
+[connection signal="pressed" from="MenuBuild/Slot2" to="." method="_on_slot_2_pressed"]
+[connection signal="pressed" from="MenuBuild/Slot3" to="." method="_on_slot_3_pressed"]
+[connection signal="pressed" from="MenuBuild/Slot4" to="." method="_on_slot_3_pressed"]
