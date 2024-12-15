@@ -1,6 +1,3 @@
 res://Buildings/Item.tscn
-res://Global.gd
-res://Buildings/Item.gd
-res://ui.gd
-res://ui.tscn
 res://Assets/barrapanel.tres
+res://ui.tscn

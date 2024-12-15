@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1734098490
+::res://::1734260620
 build.gd::GDScript::-1::1734024901::0::1::::<>Node2D<>::
 Build.tscn::PackedScene::7362923566723806249::1734098162::0::1::::<><>::uid://b7hev4cbwvh7v::::res://img/popup_background.png<>res://build.gd<>uid://dv4eykwb2orxt::::res://Assets/rpgiab_icon_pack_v1.3/32x32/delete.png<>uid://bo5q5j12w41xu::::res://slot.tscn
 buildable_sprite.tscn::PackedScene::4495588078811766650::1733161307::0::1::::<><>::uid://dkd7dwvw55glv::::res://Assets/House/houses.png
@@ -7,7 +7,7 @@ camera_2d.gd::GDScript::-1::1734098162::0::1::::<>Camera2D<>::
 export_presets.cfg::TextFile::-1::1734098162::0::1::::<><>::
 fog.gd::GDScript::-1::1734024901::0::1::::<>TileMapLayer<>::
 gameplaymusic (online-audio-converter.com).wav::AudioStreamWAV::1050106800293424263::1734098162::1734098503::1::::<><>::
-Global.gd::GDScript::-1::1734098108::0::1::::<>Node<>::
+Global.gd::GDScript::-1::1734260137::0::1::::<>Node<>::
 icon.svg::CompressedTexture2D::3368103934904702007::1731346945::1734098498::1::::<><>::
 intro.gd::GDScript::-1::1734098162::0::1::::<>Control<>::
 intro.tscn::PackedScene::7250093756254293397::1734098162::0::1::::<><>::uid://cyh4fonftyjye::::res://img/cloud-icon-pixelart.png<>res://intro.gd<>uid://bsvrqequeyl15::::res://img/title-lastbastion.png<>uid://dt5fbjokmhfjb::::res://img/START_Button.png<>uid://dgu1g8ic74ne1::::res://Audio/button_effect.wav<>uid://c8idy6glqumt4::::res://Audio/intro.wav
@@ -25,25 +25,25 @@ slot.gd::GDScript::-1::1734024901::0::1::::<>Button<>::
 slot.tscn::PackedScene::3432021387081150642::1734098108::0::1::::<><>::res://slot.gd<>uid://b3lnl17wgsrme::::res://Buildings/LightHouse.png
 time_ui.gd::GDScript::-1::1734098162::0::1::::<>Control<>::
 time_ui.tscn::PackedScene::1742573342107059781::1734098162::0::1::::<><>::res://time_ui.gd<>uid://6e3clsfjjcg4::::res://Assets/Fonts/Kenney Mini Square.ttf<>uid://cawx1l805xl8t::::res://Assets/rpgiab_icon_pack_v1.3/32x32/arrow_speed.png<>uid://465xapt1ho6j::::res://Audio/button_menu.wav
-ui.gd::GDScript::-1::1734098162::0::1::::<>Control<>::
-ui.tscn::PackedScene::2697727132179849786::1734098162::0::1::::<><>::res://ui.gd<>uid://jv1d3ord6vkn::::res://Assets/rpgiab_icon_pack_v1.3/32x32/gear.png<>uid://bl7ilct1lp1u1::::res://Assets/barrapanel.tres<>uid://brs3aicy34f51::::res://Assets/rpgiab_icon_pack_v1.3/32x32/book.png<>uid://drghywmipeopf::::res://Assets/rpgiab_icon_pack_v1.3/32x32/tool_items.png<>uid://y3d6tf6lj2b6::::res://time_ui.tscn<>uid://465xapt1ho6j::::res://Audio/button_menu.wav
-::res://Assets/::1734098161
-barrapanel.tres::TileSet::3225063567111080914::1734098107::0::1::::<><>::uid://djat2pqqphwnm::::res://Assets/tileset_barra.png
+ui.gd::GDScript::-1::1734260282::0::1::::<>Control<>::
+ui.tscn::PackedScene::2697727132179849786::1734260620::0::1::::<><>::res://ui.gd<>uid://jv1d3ord6vkn::::res://Assets/rpgiab_icon_pack_v1.3/32x32/gear.png<>uid://bl7ilct1lp1u1::::res://Assets/barrapanel.tres<>uid://brs3aicy34f51::::res://Assets/rpgiab_icon_pack_v1.3/32x32/book.png<>uid://drghywmipeopf::::res://Assets/rpgiab_icon_pack_v1.3/32x32/tool_items.png<>uid://y3d6tf6lj2b6::::res://time_ui.tscn<>uid://crvfhba246px::::res://Audio/button_menu.wav<>uid://btd1oqmfa7ni0::::res://Assets/text_settings.tres<>uid://5bjbdcegj423::::res://Assets/rpgiab_icon_pack_v1.3/32x32/character.png<>uid://d3opugmhcd2qv::::res://Assets/rpgiab_icon_pack_v1.3/32x32/mac_logo.png<>uid://d4knnuqs0a1wc::::res://Assets/rpgiab_icon_pack_v1.3/32x32/anvil_in.png
+::res://Assets/::1734260306
+barrapanel.tres::TileSet::3225063567111080914::1734260306::0::1::::<><>::uid://djat2pqqphwnm::::res://Assets/tileset_barra.png
 text_notes_settings.tres::LabelSettings::8329618775851729118::1734098161::0::1::::<><>::uid://1unlvns4ao8h::::res://Assets/Fonts/Pixellari.ttf
 text_settings.tres::LabelSettings::3727806348144197757::1734098161::0::1::::<><>::uid://6e3clsfjjcg4::::res://Assets/Fonts/Kenney Mini Square.ttf
 tileset_barra.png::CompressedTexture2D::7792164296434025286::1733161307::1734098498::1::::<><>::
-::res://Assets/AnimatedTreeFree/::1734098107
+::res://Assets/AnimatedTreeFree/::1734098500
 AnimatedAutum.png::CompressedTexture2D::47970057170551605::1733161307::1734098500::1::::<><>::
 Freedecorations.png::CompressedTexture2D::5059929492738101758::1733161307::1734098500::1::::<><>::
-::res://Assets/Fonts/::1734098161
+::res://Assets/Fonts/::1734098495
 DePixelHalbfett.ttf::FontFile::3331229302100822205::1734098161::1734098495::1::::<><>::
 Kenney Mini Square.ttf::FontFile::2185815916983405289::1733161307::1734098495::1::::<><>::
 Pixellari.ttf::FontFile::3173482616227719846::1734098161::1734098495::1::::<><>::
-::res://Assets/House/::1734098107
+::res://Assets/House/::1734098500
 houses.png::CompressedTexture2D::1766892965168490639::1732558537::1734098500::1::::<><>::
 ::res://Assets/houses/::1734024615
 ::res://Assets/Isometric Asset Pack/::1731951532
-::res://Assets/Map/::1734098107
+::res://Assets/Map/::1734098500
 tile1.png::CompressedTexture2D::3181216701887625641::1731951532::1734098500::1::::<><>::
 ::res://Assets/NotasDiarias/::1734098161
 01-01-2044.md::TextFile::-1::1734098161::0::1::::<><>::
@@ -56,12 +56,12 @@ tile1.png::CompressedTexture2D::3181216701887625641::1731951532::1734098500::1::
 08-01-2044.md::TextFile::-1::1734098161::0::1::::<><>::
 09-01-2044.md::TextFile::-1::1734098161::0::1::::<><>::
 10-01-2044.md::TextFile::-1::1734098161::0::1::::<><>::
-::res://Assets/rpgiab_icon_pack_v1.3/::1734098108
+::res://Assets/rpgiab_icon_pack_v1.3/::1734098498
 icon_sheet_16x16.png::CompressedTexture2D::6049439831357710121::1731348746::1734098498::1::::<><>::
 icon_sheet_32x32.png::CompressedTexture2D::7673848954364367140::1731348746::1734098498::1::::<><>::
 preview.png::CompressedTexture2D::950191823758315332::1731348746::1734098498::1::::<><>::
 readme.txt::TextFile::-1::1731348746::0::1::::<><>::
-::res://Assets/rpgiab_icon_pack_v1.3/16x16/::1734098108
+::res://Assets/rpgiab_icon_pack_v1.3/16x16/::1734098503
 2d.png::CompressedTexture2D::96600910082081659::1731348746::1734098500::1::::<><>::
 accept.png::CompressedTexture2D::9002768178071806324::1731348746::1734098500::1::::<><>::
 add.png::CompressedTexture2D::7248323017571173376::1731348746::1734098500::1::::<><>::
@@ -462,7 +462,7 @@ world_page.png::CompressedTexture2D::1508487225510144987::1731348746::1734098501
 xp.png::CompressedTexture2D::2032630641410553737::1731348746::1734098501::1::::<><>::
 yield.png::CompressedTexture2D::8955621563940260933::1731348746::1734098501::1::::<><>::
 yield_add.png::CompressedTexture2D::8441002489126654561::1731348746::1734098501::1::::<><>::
-::res://Assets/rpgiab_icon_pack_v1.3/32x32/::1734098108
+::res://Assets/rpgiab_icon_pack_v1.3/32x32/::1734261289
 2d.png::CompressedTexture2D::1630871217992758376::1731348746::1734098501::1::::<><>::
 accept.png::CompressedTexture2D::2812439583693456708::1731348746::1734098501::1::::<><>::
 add.png::CompressedTexture2D::5129001765524102211::1731348746::1734098501::1::::<><>::
@@ -819,6 +819,7 @@ transparency.png::CompressedTexture2D::1690887831556271613::1731348746::17340984
 tree_collapse.png::CompressedTexture2D::3442485567151348869::1731348746::1734098497::1::::<><>::
 tree_expand.png::CompressedTexture2D::6988248792575607976::1731348746::1734098497::1::::<><>::
 trello_logo.png::CompressedTexture2D::8283990767623108718::1731348746::1734098497::1::::<><>::
+trigo Asset.png::CompressedTexture2D::1856161765482207907::1734261256::1734261294::1::::<><>::
 twitter_logo.png::CompressedTexture2D::1160387476381023809::1731348746::1734098497::1::::<><>::
 ui.png::CompressedTexture2D::9003246576208488651::1731348746::1734098497::1::::<><>::
 ui_inventory.png::CompressedTexture2D::53531474544382122::1731348746::1734098497::1::::<><>::
@@ -863,7 +864,7 @@ world_page.png::CompressedTexture2D::3335196096836921333::1731348746::1734098498
 xp.png::CompressedTexture2D::3239672611184025659::1731348746::1734098498::1::::<><>::
 yield.png::CompressedTexture2D::1922686665710432007::1731348746::1734098498::1::::<><>::
 yield_add.png::CompressedTexture2D::7455591052378712481::1731348746::1734098498::1::::<><>::
-::res://Assets/smoke/::1734098161
+::res://Assets/smoke/::1734098498
 smoke_1.png::CompressedTexture2D::634477669805794026::1734098161::1734098498::1::::<><>::
 smoke_2.png::CompressedTexture2D::5325994454095457159::1734098161::1734098498::1::::<><>::
 smoke_3.png::CompressedTexture2D::8295414360670425475::1734098161::1734098498::1::::<><>::
@@ -872,7 +873,7 @@ smoke_5.png::CompressedTexture2D::1092122665273747644::1734098161::1734098498::1
 smoke_6.png::CompressedTexture2D::1363042310439522224::1734098161::1734098498::1::::<><>::
 smoke_7.png::CompressedTexture2D::7228578934143063544::1734098161::1734098498::1::::<><>::
 smoke_8.png::CompressedTexture2D::8428184275257148248::1734098161::1734098498::1::::<><>::
-::res://Audio/::1734098162
+::res://Audio/::1734098504
 backgroun_music01.wav::AudioStreamWAV::155190765445955788::1734098161::1734098504::1::::<><>::
 bell_sound.wav::AudioStreamWAV::2910531801863860864::1734098161::1734098503::1::::<><>::
 building_sound.wav::AudioStreamWAV::9166101344068410780::1734098161::1734098503::1::::<><>::
@@ -881,11 +882,11 @@ button_effect.wav::AudioStreamWAV::793649368811947339::1734098161::1734098503::1
 button_menu.wav::AudioStreamWAV::176756464158213865::1734098161::1734098503::1::::<><>::
 gameplaymusic.wav::AudioStreamWAV::5292549809861128754::1734098162::1734098504::1::::<><>::
 intro.wav::AudioStreamWAV::3690858333247808946::1734098162::1734098504::1::::<><>::
-::res://Buildings/::1734098162
-Item.gd::GDScript::-1::1734098162::0::1::::<>Sprite2D<>::
-Item.tscn::PackedScene::5786229569034313749::1734098162::0::1::::<><>::uid://b3lnl17wgsrme::::res://Buildings/LightHouse.png<>res://Buildings/Item.gd<>uid://ctm0m7e0wwjs7::::res://Audio/building_sound.wav
+::res://Buildings/::1734260620
+Item.gd::GDScript::-1::1734100965::0::1::::<>Sprite2D<>::
+Item.tscn::PackedScene::5786229569034313749::1734260620::0::1::::<><>::uid://b3lnl17wgsrme::::res://Buildings/LightHouse.png<>res://Buildings/Item.gd<>uid://d3uel5sskum01::::res://Audio/building_sound.wav
 LightHouse.png::CompressedTexture2D::4375226841540753168::1733770725::1734098498::1::::<><>::
-::res://img/::1734098162
+::res://img/::1734098499
 Cerrar Juego.png::CompressedTexture2D::802062330695960774::1731608097::1734098498::1::::<><>::
 cloud-icon-pixelart.png::CompressedTexture2D::2287577858909441746::1734098162::1734098498::1::::<><>::
 popup_background.png::CompressedTexture2D::4647196220374056857::1731350796::1734098498::1::::<><>::
@@ -893,7 +894,7 @@ SpriteHouse.png::CompressedTexture2D::1336168568402555755::1731350705::173409849
 START_Button.png::CompressedTexture2D::6422606601761921210::1734098162::1734098498::1::::<><>::
 title-lastbastion.png::CompressedTexture2D::6438958825815968398::1734098162::1734098498::1::::<><>::
 ui_bar_left.png::CompressedTexture2D::4179893541328693661::1731348746::1734098499::1::::<><>::
-::res://Map/::1734098108
+::res://Map/::1734098498
 fog.png::CompressedTexture2D::6361179943875806784::1733770725::1734098498::1::::<><>::
 Iles-Kerguelen.png::CompressedTexture2D::5844673248255324699::1732556262::1734098498::1::::<><>::
 Map.png::CompressedTexture2D::7785124433745786433::1733770725::1734098498::1::::<><>::
