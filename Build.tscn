@@ -17,24 +17,31 @@ texture = ExtResource("1_gejmj")
 
 [node name="Slot" parent="MenuBuild" instance=ExtResource("3_um327")]
 layout_mode = 0
-offset_left = 50.0
-offset_top = 115.0
-offset_right = 178.0
-offset_bottom = 243.0
+offset_left = 109.0
+offset_top = 193.0
+offset_right = 237.0
+offset_bottom = 321.0
 
 [node name="Slot2" parent="MenuBuild" instance=ExtResource("3_um327")]
 layout_mode = 0
-offset_left = 193.0
-offset_top = 117.0
-offset_right = 321.0
-offset_bottom = 245.0
+offset_left = 248.0
+offset_top = 193.0
+offset_right = 376.0
+offset_bottom = 321.0
 
 [node name="Slot3" parent="MenuBuild" instance=ExtResource("3_um327")]
 layout_mode = 0
-offset_left = 341.0
-offset_top = 121.0
-offset_right = 469.0
-offset_bottom = 249.0
+offset_left = 387.0
+offset_top = 193.0
+offset_right = 515.0
+offset_bottom = 321.0
+
+[node name="Slot4" parent="MenuBuild" instance=ExtResource("3_um327")]
+layout_mode = 0
+offset_left = 526.0
+offset_top = 193.0
+offset_right = 654.0
+offset_bottom = 321.0
 
 [node name="Cerrar" type="Button" parent="MenuBuild"]
 layout_mode = 0
@@ -48,3 +55,4 @@ flat = true
 [connection signal="pressed" from="MenuBuild/Slot" to="." method="_on_slot_pressed"]
 [connection signal="pressed" from="MenuBuild/Slot2" to="." method="_on_slot_2_pressed"]
 [connection signal="pressed" from="MenuBuild/Slot3" to="." method="_on_slot_3_pressed"]
+[connection signal="pressed" from="MenuBuild/Slot4" to="." method="_on_slot_3_pressed"]

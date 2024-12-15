@@ -26,20 +26,21 @@ func item_select(sprite: Sprite2D):
 				shape.extents = texture_size / 2  # Ajuste tanto en X como en Y
 				
 				# Obtener los ColorRect "Ok" y "Deny" como hijos de CollisionShape2D
-				var ok = area2d.get_node("Ok")  # Suponiendo que "Ok" es un ColorRect
-				var deny = area2d.get_node("Deny")  # Suponiendo que "Deny" es un ColorRect
+				var ok = area2d.get_node("CollisionShape2D/Ok")  # Suponiendo que "Ok" es un ColorRect
+				var deny = area2d.get_node("CollisionShape2D/Deny")  # Suponiendo que "Deny" es un ColorRect
 				
 				# Ajustar la posición de los ColorRect
 				if ok and deny:
 					var offset_y = shape.extents.y  # Posición en Y es la mitad de la altura de la textura (parte inferior)
 					
 					# Colocar ambos ColorRects en la parte inferior y centrados
-					ok.rect_min_size.x = texture_size.x / 2  # Ajustar el ancho de Ok al 50% del tamaño de la textura
-					deny.rect_min_size.x = texture_size.x / 2  # Ajustar el ancho de Deny al 50% del tamaño de la textura
+					ok.size = Vector2(texture_size.x / 2, ok.size.y)  
+					deny.size = Vector2(texture_size.x / 2, deny.size.y)
+
 					
 					# Centrarlos horizontalmente, usando el tamaño de la textura y restando el ancho de los ColorRects
-					ok.rect_position = Vector2((texture_size.x - ok.rect_min_size.x) / 2, offset_y)
-					deny.rect_position = Vector2((texture_size.x - deny.rect_min_size.x) / 2, offset_y - ok.rect_min_size.y)  # Justo debajo de Ok
+					ok.position = Vector2((texture_size.x - ok.size.x) / 2, offset_y)
+					deny.position = Vector2((texture_size.x - deny.size.x) / 2, offset_y - ok.size.y)
 		else:
 			print("Error: No se encontró el nodo CollisionShape2D en Area2D.")
 	else:

@@ -1,15 +1,8 @@
-<<<<<<< HEAD
-res://Map.tscn
+res://Build.tscn
 res://Map/Map.tres
-res://Buildings/Item.tscn
+res://Assets/text_settings.tres
+res://Assets/text_notes_settings.tres
+res://Assets/barrapanel.tres
 res://main.tscn
-res://Assets/barrapanel.tres
-res://nieve.tscn
-=======
+res://slot.tscn
 res://Buildings/Item.tscn
-res://Global.gd
-res://Buildings/Item.gd
-res://ui.gd
-res://ui.tscn
-res://Assets/barrapanel.tres
->>>>>>> dev-hud
