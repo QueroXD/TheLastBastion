@@ -38,6 +38,8 @@ func _on_book_scene_closed():
 @onready var button_construction = $Menu/Construction
 @onready var button_book = $Menu/Book
 @onready var habitantes = $Contador/Habitantes
+@onready var comida = $Alimentos/Comida
+@onready var recursos = $Recursos/Materiales
 @onready var timer = $Contador/Timer
 
 func _ready():
@@ -46,7 +48,9 @@ func _ready():
 	timer.timeout.connect(_on_timer_timeout)
 	
 	habitantes.text = str(Global.poblacion)
-	
+	comida.text = str(Global.comida)
+	recursos.text = str(Global.recursos)
+
 	# Verifica si el botón "Construction" se ha cargado correctamente
 	if button_construction:
 		button_construction.connect("pressed", Callable(self, "_on_Construction_pressed"))
@@ -62,6 +66,8 @@ func _ready():
 func _on_timer_timeout():
 	# Actualiza el texto del Label con la variable global
 	habitantes.text = str(Global.poblacion)
+	comida.text = str(Global.comida)
+	recursos.text = str(Global.recursos)
 
 func _on_config_pressed() -> void:
 	buttonSound.play(0.0)
