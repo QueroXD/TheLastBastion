@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=4 uid="uid://c5b7we8ves10h"]
+[gd_scene load_steps=25 format=4 uid="uid://c5b7we8ves10h"]
 
 [ext_resource type="Script" path="res://map.gd" id="1_3p6fd"]
 [ext_resource type="Texture2D" uid="uid://di6f4kqfqjk22" path="res://Map/Map.png" id="1_wmx6y"]
@@ -6,10 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://d3kh1n3wtw5vy" path="res://Map/tree.png" id="3_w0okl"]
 [ext_resource type="Texture2D" uid="uid://cwvnx7fvt277y" path="res://Map/fog.png" id="4_fx84j"]
 [ext_resource type="TileSet" uid="uid://cxjdy4c2r8ca0" path="res://Map/Map.tres" id="5_syl3j"]
-[ext_resource type="Texture2D" uid="uid://t2s1t1c4bn0y" path="res://Map/tf_A2_atlantis.png" id="5_we7l0"]
-[ext_resource type="Texture2D" uid="uid://7n32joeyrq6p" path="res://Map/tf_B_atlantisB.png" id="6_4afkr"]
+[ext_resource type="Texture2D" uid="uid://db8312isnrugc" path="res://Map/tf_A2_atlantis.png" id="5_we7l0"]
+[ext_resource type="Texture2D" uid="uid://bginpv75df4pw" path="res://Map/tf_B_atlantisB.png" id="6_4afkr"]
 [ext_resource type="Shader" path="res://Shader/water.gdshader" id="6_axms3"]
-[ext_resource type="Texture2D" uid="uid://c7dgsuyuad8gq" path="res://Map/Water.png" id="7_akegd"]
+[ext_resource type="Texture2D" uid="uid://des6ig2j626ej" path="res://Map/Water.png" id="7_akegd"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_dxhjj"]
 tile_data = PackedInt32Array(0, 458752, 5, 65536, 458752, 6, 1, 524288, 5, 65537, 524288, 6)
@@ -504,32 +504,6 @@ texture_region_size = Vector2i(32, 32)
 tile_size = Vector2i(32, 32)
 sources/0 = SubResource("TileSetAtlasSource_y4tru")
 
-[sub_resource type="Curve" id="Curve_m624a"]
-_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.862126, 0.200568), -1.58657, -1.58657, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
-point_count = 3
-
-[sub_resource type="CurveTexture" id="CurveTexture_ucegw"]
-curve = SubResource("Curve_m624a")
-
-[sub_resource type="Gradient" id="Gradient_k86qq"]
-offsets = PackedFloat32Array(0.503546, 0.624114)
-colors = PackedColorArray(1, 1, 1, 0.352941, 1, 1, 1, 1)
-
-[sub_resource type="GradientTexture1D" id="GradientTexture1D_nblm7"]
-gradient = SubResource("Gradient_k86qq")
-
-[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_pup6x"]
-particle_flag_disable_z = true
-emission_shape = 3
-emission_box_extents = Vector3(500, 1, 1)
-gravity = Vector3(45, 98, 0)
-scale_max = 4.0
-color_initial_ramp = SubResource("GradientTexture1D_nblm7")
-alpha_curve = SubResource("CurveTexture_ucegw")
-turbulence_enabled = true
-turbulence_influence_min = 0.02
-turbulence_influence_max = 0.08
-
 [node name="Map" type="Node2D"]
 script = ExtResource("1_3p6fd")
 
@@ -559,10 +533,3 @@ tile_map_data = PackedByteArray("AABMAE4AAgAAAAMAAABPAE4AAgAAAAMAAABOAE4AAgAAAAM
 tile_set = ExtResource("5_syl3j")
 
 [node name="Build" type="Node2D" parent="."]
-
-[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
-position = Vector2(473, 8)
-amount = 1000
-process_material = SubResource("ParticleProcessMaterial_pup6x")
-lifetime = 30.0
-preprocess = 30.0
