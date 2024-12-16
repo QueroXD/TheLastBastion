@@ -1,10 +1,5 @@
-res://main.tscn
-res://Map/Map.tres
-res://Assets/barrapanel.tres
-res://slot.tscn
-res://Buildings/Item.tscn
-res://Build.tscn
-res://Map.tscn
-res://time_ui.gd
-res://ciclo_dia.tscn
+res://Game/main.tscn
 res://Assets/daynightcycle-gradient-texture.tres
+res://Assets/Map/Map.tres
+res://Assets/barrapanel.tres
+res://Game/Map.tscn

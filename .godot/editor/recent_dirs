@@ -1,3 +1,4 @@
+res://Game
 res://Buildings
 res://
 res://Assets/smoke
@@ -5,9 +6,7 @@ res://Audio
 res://Assets/Fonts
 res://Assets
 res://img
-res://Scripts/Global
 res://Assets/rpgiab_icon_pack_v1.3/32x32
-res://Assets/House
 res://Map
 res://Assets/AnimatedTreeFree
 <<<<<<< HEAD
