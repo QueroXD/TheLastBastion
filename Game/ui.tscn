@@ -6,10 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://brs3aicy34f51" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/book.png" id="3_25a44"]
 [ext_resource type="Texture2D" uid="uid://drghywmipeopf" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/tool_items.png" id="4_hxdlf"]
 [ext_resource type="PackedScene" uid="uid://y3d6tf6lj2b6" path="res://Game/time_ui.tscn" id="6_rtvll"]
-[ext_resource type="AudioStream" uid="uid://crvfhba246px" path="res://Audio/button_menu.wav" id="7_gt651"]
+[ext_resource type="AudioStream" uid="uid://bjbdr08lmd1iw" path="res://Audio/button_menu.wav" id="7_gt651"]
 [ext_resource type="LabelSettings" uid="uid://btd1oqmfa7ni0" path="res://Assets/text_settings.tres" id="7_wttls"]
 [ext_resource type="Texture2D" uid="uid://5bjbdcegj423" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/character.png" id="8_kend2"]
-[ext_resource type="Texture2D" uid="uid://1peyilik5i6v" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/trigo Asset.png" id="9_cv8bq"]
+[ext_resource type="Texture2D" uid="uid://xgw5bcu8538q" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/trigo Asset.png" id="9_cv8bq"]
 [ext_resource type="Texture2D" uid="uid://d4knnuqs0a1wc" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/anvil_in.png" id="10_kigwf"]
 
 [node name="UI" type="Control"]

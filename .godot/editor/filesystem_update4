@@ -1,8 +1,6 @@
 res://Game/main.tscn
 res://Assets/Map/Map.tres
 res://Assets/barrapanel.tres
-res://Game/Build.tscn
-res://Game/ui.tscn
-res://Game/Item.tscn
-res://Game/slot.tscn
-res://Game/Map.tscn
+res://Game/Scripts/slot.gd
+res://Assets/daynightcycle-gradient-texture.tres
+res://Game/ciclo_dia.tscn

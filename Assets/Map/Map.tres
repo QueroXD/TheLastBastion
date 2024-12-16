@@ -1,8 +1,8 @@
 [gd_resource type="TileSet" load_steps=9 format=3 uid="uid://cxjdy4c2r8ca0"]
 
-[ext_resource type="Texture2D" uid="uid://b51nessrs62oh" path="res://Assets/Map/Map.png" id="1_ly4am"]
+[ext_resource type="Texture2D" uid="uid://deu4v7vyhk6rb" path="res://Assets/Map/Map.png" id="1_ly4am"]
 [ext_resource type="Texture2D" uid="uid://cedckgg1rbda1" path="res://Assets/AnimatedTreeFree/Freedecorations.png" id="2_vjyay"]
-[ext_resource type="Texture2D" uid="uid://52hiqjc2xnlb" path="res://Assets/Map/tree.png" id="3_fnm6b"]
+[ext_resource type="Texture2D" uid="uid://55qlevf1fggg" path="res://Assets/Map/tree.png" id="3_fnm6b"]
 [ext_resource type="Texture2D" uid="uid://b3lnl17wgsrme" path="res://Buildings/LightHouse.png" id="4_qo8ek"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_naobo"]

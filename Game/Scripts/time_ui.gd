@@ -5,6 +5,9 @@ extends Control
 @onready var next_day_button = $NextDayButton
 @onready var popup_instance = preload("res://Game/NotasDiarias.tscn")
 @onready var buttonSound = $ButtonSound
+@onready var diaNoche = preload("res://Game/ciclo_dia.tscn")
+
+var ciclo_instance: Control
 
 func _ready():
 	date_label.text = "01-01-2044"
@@ -12,6 +15,11 @@ func _ready():
 
 func on_button_pressed():
 	buttonSound.play(0.0)
+
+	ciclo_instance = diaNoche.instantiate()
+	add_child(ciclo_instance)
+	await pausa(4.0)
+	ciclo_instance.queue_free()
 
 	# Incrementar la fecha
 	var current_date = date_label.text
@@ -54,3 +62,12 @@ func show_popup_with_message(message: String):
 		texture_rect.visible = true
 	#else:
 		#print_error("El nodo 'TextureRect' no se encuentra en la escena de pop-up")
+# Función para crear la pausa
+func pausa(segundos: float):
+	var timer = Timer.new()
+	add_child(timer)  # Añadimos el temporizador a la escena
+	timer.wait_time = segundos
+	timer.one_shot = true
+	timer.start()
+	await timer.timeout  # Esperamos hasta que el temporizador se acabe
+	timer.queue_free()  # Eliminamos el temporizador cuando termine

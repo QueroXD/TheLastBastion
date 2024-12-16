@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b3lnl17wgsrme" path="res://Buildings/LightHouse.png" id="1_nbj38"]
 [ext_resource type="Script" path="res://Game/Scripts/Item.gd" id="2_7ki3b"]
-[ext_resource type="AudioStream" uid="uid://d3uel5sskum01" path="res://Audio/building_sound.wav" id="3_tg776"]
+[ext_resource type="AudioStream" uid="uid://w3jmu3ximmjf" path="res://Audio/building_sound.wav" id="3_tg776"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8u3c1"]
 size = Vector2(62.5, 128.25)

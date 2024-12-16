@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dc5wjmmu0q8en"]
 
-[ext_resource type="Texture2D" uid="uid://bq33yxayccwvl" path="res://Assets/img/popup_background.png" id="1_gejmj"]
+[ext_resource type="Texture2D" uid="uid://c7p13psuw4gs3" path="res://Assets/img/popup_background.png" id="1_gejmj"]
 [ext_resource type="Script" path="res://Game/Scripts/build.gd" id="1_i2mu1"]
 [ext_resource type="Texture2D" uid="uid://dv4eykwb2orxt" path="res://Assets/rpgiab_icon_pack_v1.3/32x32/delete.png" id="3_4cii0"]
 [ext_resource type="PackedScene" uid="uid://bo5q5j12w41xu" path="res://Game/slot.tscn" id="3_um327"]
