@@ -8,11 +8,11 @@ func _on_ButtonCerrar_pressed():
 # Conecta la señal del botón Cerrar al método
 func _ready():
 	# Conectar el botón de cerrar
-	$Nota/Cerrar.connect("pressed", Callable(self, "_on_ButtonCerrar_pressed"))
+	$CanvasLayer/Nota/Cerrar.connect("pressed", Callable(self, "_on_ButtonCerrar_pressed"))
 	
 	# Accede al nodo Label llamado Titulo y actualiza su texto con la variable global
-	var titulo_label = $Nota/Titulo
-	var texto_label = $Nota/NotaDiaria
+	var titulo_label = $CanvasLayer/Nota/Titulo
+	var texto_label = $CanvasLayer/Nota/NotaDiaria
 	if titulo_label:
 		titulo_label.text = "Dia actual: " + Global.mi_variable
 		
